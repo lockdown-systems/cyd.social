@@ -79,12 +79,7 @@ const config: Config = {
       ],
     },
     footer: {
-      style: "dark",
-      logo: {
-        alt: "Claw back your data",
-        src: "img/clawred.svg",
-        height: 300,
-      },
+      style: "light",
       links: [
         {
           html: `<a href="https://bsky.app/profile/cyd.social"><img src="/img/bluesky-brands.svg" alt="Bluesky" rel="me"></a>`,
