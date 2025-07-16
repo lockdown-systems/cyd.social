@@ -1,13 +1,11 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
-
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+import { themes as prismThemes } from "prism-react-renderer";
+import type { Config } from "@docusaurus/types";
+import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: "Cyd",
+  tagline: "Tech platforms can't be trusted.",
+  favicon: "img/icon.svg",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -15,128 +13,110 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: "https://cyd.social;",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  // GitHub pages deployment config
+  organizationName: "lockdown-systems",
+  projectName: "cyd.social",
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       {
         docs: {
-          sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+          sidebarPath: "./sidebars.ts",
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       } satisfies Preset.Options,
     ],
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: 'My Site',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: "Cyd Logo",
+        src: "img/cyd.svg",
       },
       items: [
+        { to: "/", label: "Home", position: "left" },
+        { to: "https://docs.cyd.social/", label: "Docs", position: "left" },
+        { to: "/pricing/", label: "Pricing", position: "left" },
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
+          to: "https://opencollective.com/lockdown-systems",
+          label: "Donate",
+          position: "left",
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
+          to: "https://lockdown.systems/#/portal/signup",
+          label: "Newsletter",
+          position: "left",
+        },
+        {
+          to: "https://dash.cyd.social/",
+          label: "Manage Account",
+          position: "left",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
+      logo: {
+        alt: "Claw back your data",
+        src: "img/clawred.svg",
+        height: 300,
+      },
       links: [
         {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
+          html: `<a href="https://bsky.app/profile/cyd.social"><img src="/img/bluesky-brands.svg" alt="Bluesky" rel="me"></a>`,
         },
         {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
+          html: `<a href="https://infosec.exchange/@cyd"><img src="/img/mastodon-brands.svg" alt="Mastodon" rel="me"></a>`,
         },
         {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
+          html: `<a href="https://x.com/cyd_social"><img src="/img/x-twitter-brands.svg" alt="X Twitter" rel="me"></a>`,
+        },
+        {
+          html: `<a href="https://github.com/lockdown-systems/cyd/"><img src="/img/github-brands.svg" alt="GitHub" rel="me"></a>`,
+        },
+        {
+          label: "Privacy Policy",
+          to: "/privacy/",
+        },
+        {
+          label: "Terms of Use",
+          to: "/terms/",
+        },
+        {
+          label: "Contact",
+          to: "/contact/",
+        },
+        {
+          label: "Lockdown Systems",
+          to: "https://lockdown.systems/",
+        },
+        {
+          label: "Credits",
+          to: "/credits/",
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: "Cyd is a project of Lockdown Systems LLC",
     },
     prism: {
       theme: prismThemes.github,
