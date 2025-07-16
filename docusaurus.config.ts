@@ -70,6 +70,12 @@ const config: Config = {
           label: "Manage Account",
           position: "left",
         },
+        {
+          to: "/download/",
+          html: '<img src="/img/white-download.svg" alt="Download Cyd" /> Download Cyd',
+          className: "navDownloadButton",
+          position: "right",
+        },
       ],
     },
     footer: {
