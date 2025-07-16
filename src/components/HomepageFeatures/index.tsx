@@ -1,52 +1,79 @@
-import type {ReactNode} from 'react';
-import clsx from 'clsx';
-import Heading from '@theme/Heading';
-import styles from './styles.module.css';
+import type { ReactNode } from "react";
+import clsx from "clsx";
+import Heading from "@theme/Heading";
+import styles from "./styles.module.css";
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  image: string;
   description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: "Backup Your Data",
+    image: "/img/feature-backup.png",
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Save a searchable copy of your data from tech platforms locally on your
+        computer.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: "Delete Your Data",
+    image: "/img/feature-delete.png",
+    description: (
+      <>Delete your tweets, likes, direct messages, and other data from X.</>
+    ),
+  },
+  {
+    title: "Migrate Your Data",
+    image: "/img/feature-migrate.png",
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Migrate your tweets from closed platforms like X into open platforms
+        like Bluesky.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: "Private and Secure",
+    image: "/img/feature-private.png",
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Cyd runs directly on your computer, not on our servers. We don't have
+        access to any of your accounts, or to any of the data in them.
+      </>
+    ),
+  },
+  {
+    title: "Enshittification-Proof",
+    image: "/img/feature-enshittification.png",
+    description: (
+      <>
+        Cyd doesn't rely on third-party APIs from hostile tech platforms like X
+        and Facebook.
+      </>
+    ),
+  },
+  {
+    title: "Open Source",
+    image: "/img/feature-open-source.png",
+    description: (
+      <>
+        Cyd is open source software developed by Lockdown Systems Collective for
+        the social good. The code is available on GitHub.
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, image, description }: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx("col col--4")}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img src={image} className={styles.featurePng} role="img" alt={title} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
