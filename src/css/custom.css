@@ -29,6 +29,93 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+/* Global Button Styles */
+.buttonPrimary {
+  background: #ff6b35 !important;
+  color: white !important;
+  border: none !important;
+  padding: 1rem 2rem !important;
+  border-radius: 50px !important;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3) !important;
+  cursor: pointer !important;
+}
+
+.buttonPrimary:hover {
+  background: #e55a2b !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4) !important;
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.buttonSecondary {
+  background: #2b4464 !important;
+  color: white !important;
+  border: none !important;
+  padding: 1rem 2rem !important;
+  border-radius: 50px !important;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 15px rgba(73, 80, 87, 0.3) !important;
+  cursor: pointer !important;
+}
+
+.buttonSecondary:hover {
+  background: #364e6d !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(73, 80, 87, 0.4) !important;
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.buttonIcon {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.buttonSmall {
+  padding: 0.5rem 1rem !important;
+  font-size: 0.9rem !important;
+}
+
+.buttonSmall .buttonIcon {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+/* Navbar button styles */
+.navbar__item .buttonSecondary {
+  padding: 0.5rem 1rem !important;
+  font-size: 0.9rem !important;
+  margin-left: 0.5rem !important;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .buttonPrimary,
+  .buttonSecondary {
+    padding: 0.75rem 1.5rem !important;
+    font-size: 1rem !important;
+  }
+
+  .navbar__item .buttonSecondary {
+    padding: 0.4rem 0.8rem !important;
+    font-size: 0.8rem !important;
+  }
+}
+
 .footer .footer__link-item img {
   width: 24px;
   height: 24px;

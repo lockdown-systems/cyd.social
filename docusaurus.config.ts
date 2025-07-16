@@ -72,8 +72,8 @@ const config: Config = {
         },
         {
           to: "/download/",
-          html: '<img src="/img/white-download.svg" alt="Download Cyd" /> Download Cyd',
-          className: "navDownloadButton",
+          html: '<img src="/img/white-download.svg" alt="" class="buttonIcon" /> Download Cyd',
+          className: "buttonSecondary buttonSmall",
           position: "right",
         },
       ],

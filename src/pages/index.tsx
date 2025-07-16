@@ -38,26 +38,16 @@ function HomepageHeader() {
               your tweets, and migrate them to Bluesky.
             </p>
             <div className={styles.heroButtons}>
-              <Link
-                className={clsx("button", styles.downloadButton)}
-                to="/download/"
-              >
+              <Link className="buttonPrimary" to="/download/">
                 <img
                   src="/img/white-download.svg"
                   alt=""
-                  className={styles.buttonIcon}
+                  className="buttonIcon"
                 />
                 Download Cyd
               </Link>
-              <Link
-                className={clsx("button", styles.learnMoreButton)}
-                to="https://docs.cyd.social/"
-              >
-                <img
-                  src="/img/white-read.svg"
-                  alt=""
-                  className={styles.buttonIcon}
-                />
+              <Link className="buttonSecondary" to="https://docs.cyd.social/">
+                <img src="/img/white-read.svg" alt="" className="buttonIcon" />
                 Learn More
               </Link>
             </div>
