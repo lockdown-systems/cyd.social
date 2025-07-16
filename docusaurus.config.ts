@@ -37,11 +37,13 @@ const config: Config = {
     [
       "classic",
       {
-        docs: {
-          sidebarPath: "./sidebars.ts",
-        },
+        docs: false, // Disable docs
+        blog: false, // Disable blog
         theme: {
           customCss: "./src/css/custom.css",
+        },
+        pages: {
+          // Enable pages (this is for static pages)
         },
       } satisfies Preset.Options,
     ],
@@ -60,8 +62,6 @@ const config: Config = {
         src: "img/cyd.svg",
       },
       items: [
-        { to: "/", label: "Home", position: "left" },
-        { to: "https://docs.cyd.social/", label: "Docs", position: "left" },
         { to: "/pricing/", label: "Pricing", position: "left" },
         {
           to: "https://opencollective.com/lockdown-systems",
