@@ -9,13 +9,10 @@ const config: Config = {
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: true,
   },
 
-  // Set the production url of your site here
   url: "https://cyd.social;",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
 
   // GitHub pages deployment config
@@ -25,9 +22,6 @@ const config: Config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
     locales: ["en"],
@@ -42,15 +36,13 @@ const config: Config = {
         theme: {
           customCss: "./src/css/custom.css",
         },
-        pages: {
-          // Enable pages (this is for static pages)
-        },
+        pages: {},
       } satisfies Preset.Options,
     ],
   ],
 
   themeConfig: {
-    image: "img/docusaurus-social-card.jpg",
+    image: "img/cyd-social-card.png",
     colorMode: {
       defaultMode: "light",
       disableSwitch: true,
