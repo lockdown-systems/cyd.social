@@ -54,6 +54,7 @@ const config: Config = {
         src: "img/cyd.svg",
       },
       items: [
+        { to: "/", label: "Home", position: "left", activeClassName: "" },
         { to: "/pricing/", label: "Pricing", position: "left" },
         {
           to: "https://opencollective.com/lockdown-systems",
@@ -61,14 +62,9 @@ const config: Config = {
           position: "left",
         },
         {
-          to: "https://lockdown.systems/#/portal/signup",
-          label: "Newsletter",
-          position: "left",
-        },
-        {
           to: "https://dash.cyd.social/",
           label: "Manage Account",
-          position: "left",
+          position: "right",
         },
         {
           to: "/download/",
