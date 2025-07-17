@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "@theme/Layout";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./pricing.module.css";
 
 interface FeatureItem {
@@ -126,8 +127,8 @@ function PricingCard({ plan }: { plan: PricingPlan }) {
             <img
               src={
                 feature.included
-                  ? "/img/circle-check-solid.svg"
-                  : "/img/circle-xmark-regular.svg"
+                  ? useBaseUrl("/img/circle-check-solid.svg")
+                  : useBaseUrl("/img/circle-xmark-regular.svg")
               }
               alt={feature.included ? "Included" : "Not included"}
               className={styles.featureIcon}
