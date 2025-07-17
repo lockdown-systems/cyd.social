@@ -132,10 +132,10 @@ const config: Config = {
                 <a href="https://github.com/lockdown-systems/cyd/" style="display: inline-block;"><img src="${baseUrl}img/github-brands.svg" alt="GitHub" rel="me" style="width: 24px; height: 24px;"></a>
               </div>
               <div style="display: flex; justify-content: center; align-items: center; gap: 30px; flex-wrap: wrap;">
-                <a href="${baseUrl}/privacy/" style="text-decoration: none; color: var(--ifm-footer-link-color);">Privacy Policy</a>
-                <a href="${baseUrl}/terms/" style="text-decoration: none; color: var(--ifm-footer-link-color);">Terms of Use</a>
-                <a href="${baseUrl}/contact/" style="text-decoration: none; color: var(--ifm-footer-link-color);">Contact</a>
-                <a href="${baseUrl}/credits/" style="text-decoration: none; color: var(--ifm-footer-link-color);">Credits</a>
+                <a href="${baseUrl}privacy/" style="text-decoration: none; color: var(--ifm-footer-link-color);">Privacy Policy</a>
+                <a href="${baseUrl}terms/" style="text-decoration: none; color: var(--ifm-footer-link-color);">Terms of Use</a>
+                <a href="${baseUrl}contact/" style="text-decoration: none; color: var(--ifm-footer-link-color);">Contact</a>
+                <a href="${baseUrl}credits/" style="text-decoration: none; color: var(--ifm-footer-link-color);">Credits</a>
               </div>
             </div>
           `,
