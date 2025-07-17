@@ -80,6 +80,54 @@
   text-decoration: none !important;
 }
 
+.buttonPrimaryOutline {
+  background: transparent !important;
+  color: #ff6b35 !important;
+  border: 2px solid #ff6b35 !important;
+  padding: 1rem 2rem !important;
+  border-radius: 50px !important;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer !important;
+}
+
+.buttonPrimaryOutline:hover {
+  background: #ff6b35 !important;
+  color: white !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4) !important;
+  text-decoration: none !important;
+}
+
+.buttonSecondaryOutline {
+  background: transparent !important;
+  color: #2b4464 !important;
+  border: 2px solid #2b4464 !important;
+  padding: 1rem 2rem !important;
+  border-radius: 50px !important;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer !important;
+}
+
+.buttonSecondaryOutline:hover {
+  background: #2b4464 !important;
+  color: white !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(73, 80, 87, 0.4) !important;
+  text-decoration: none !important;
+}
+
 .buttonIcon {
   width: 20px !important;
   height: 20px !important;
@@ -100,11 +148,6 @@
   padding: 0.5rem 1rem !important;
   font-size: 0.9rem !important;
   margin-left: 0.5rem !important;
-}
-
-.buttonSmall {
-  padding: 0.5rem 1rem !important;
-  font-size: 0.9rem !important;
 }
 
 /* Navbar styles */
