@@ -102,6 +102,11 @@
   margin-left: 0.5rem !important;
 }
 
+.buttonSmall {
+  padding: 0.5rem 1rem !important;
+  font-size: 0.9rem !important;
+}
+
 /* Navbar styles */
 .navbar__link {
   font-weight: bold;
