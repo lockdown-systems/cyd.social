@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "@theme/Layout";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "../pages/404.module.css";
 
 export default function NotFound() {
@@ -13,7 +14,7 @@ export default function NotFound() {
           <div className={styles.content}>
             <h1 className={styles.title}>Page Not Found</h1>
             <img
-              src="/img/omgkevin2.svg"
+              src={useBaseUrl("/img/omgkevin2.svg")}
               alt="Page Not Found"
               className={styles.image}
             />

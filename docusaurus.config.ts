@@ -2,6 +2,9 @@ import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
+// Base URL configuration
+const baseUrl = "/cyd.social/";
+
 const config: Config = {
   title: "Cyd",
   tagline: "Tech platforms can't be trusted.",
@@ -13,7 +16,7 @@ const config: Config = {
   },
 
   url: "https://lockdown-systems.github.io",
-  baseUrl: "/cyd.social/",
+  baseUrl,
 
   // GitHub pages deployment config
   organizationName: "lockdown-systems",
@@ -110,7 +113,7 @@ const config: Config = {
         },
         {
           to: "/download/",
-          html: '<img src="/img/white-download.svg" alt="" class="buttonIcon" /> Download Cyd',
+          html: `<img src="${baseUrl}img/white-download.svg" alt="" class="buttonIcon" /> Download Cyd`,
           className: "buttonSecondary buttonSmall",
           position: "right",
         },
@@ -123,10 +126,10 @@ const config: Config = {
           html: `
             <div style="width: 100%;">
               <div style="display: flex; justify-content: center; align-items: center; gap: 20px; margin-bottom: 20px; flex-wrap: wrap;">
-                <a href="https://bsky.app/profile/cyd.social" style="display: inline-block;"><img src="/img/bluesky-brands.svg" alt="Bluesky" rel="me" style="width: 24px; height: 24px;"></a>
-                <a href="https://infosec.exchange/@cyd" style="display: inline-block;"><img src="/img/mastodon-brands.svg" alt="Mastodon" rel="me" style="width: 24px; height: 24px;"></a>
-                <a href="https://x.com/cyd_social" style="display: inline-block;"><img src="/img/x-twitter-brands.svg" alt="X Twitter" rel="me" style="width: 24px; height: 24px;"></a>
-                <a href="https://github.com/lockdown-systems/cyd/" style="display: inline-block;"><img src="/img/github-brands.svg" alt="GitHub" rel="me" style="width: 24px; height: 24px;"></a>
+                <a href="https://bsky.app/profile/cyd.social" style="display: inline-block;"><img src="${baseUrl}img/bluesky-brands.svg" alt="Bluesky" rel="me" style="width: 24px; height: 24px;"></a>
+                <a href="https://infosec.exchange/@cyd" style="display: inline-block;"><img src="${baseUrl}img/mastodon-brands.svg" alt="Mastodon" rel="me" style="width: 24px; height: 24px;"></a>
+                <a href="https://x.com/cyd_social" style="display: inline-block;"><img src="${baseUrl}img/x-twitter-brands.svg" alt="X Twitter" rel="me" style="width: 24px; height: 24px;"></a>
+                <a href="https://github.com/lockdown-systems/cyd/" style="display: inline-block;"><img src="${baseUrl}img/github-brands.svg" alt="GitHub" rel="me" style="width: 24px; height: 24px;"></a>
               </div>
               <div style="display: flex; justify-content: center; align-items: center; gap: 30px; flex-wrap: wrap;">
                 <a href="/privacy/" style="text-decoration: none; color: var(--ifm-footer-link-color);">Privacy Policy</a>

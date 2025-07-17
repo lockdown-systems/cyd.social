@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Layout from "@theme/Layout";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 import { useParallax } from "@site/src/hooks/useParallax";
 import styles from "./download.module.css";
 
@@ -14,51 +15,6 @@ interface PlatformInfo {
     arch?: string;
   }>;
 }
-
-const platforms: Record<string, PlatformInfo> = {
-  mac: {
-    name: "mac",
-    displayName: "Mac",
-    icon: "/img/apple-brands.svg",
-    screenshot: "/img/download-screenshot-mac.png",
-    downloads: [
-      {
-        label: "Download",
-        url: "https://api.cyd.social/download?platform=macos",
-      },
-    ],
-  },
-  windows: {
-    name: "windows",
-    displayName: "Windows",
-    icon: "/img/windows-brands.svg",
-    screenshot: "/img/download-screenshot-windows.png",
-    downloads: [
-      {
-        label: "Download (x64)",
-        url: "https://api.cyd.social/download?platform=windows",
-        arch: "x64",
-      },
-      {
-        label: "Download (arm64)",
-        url: "https://api.cyd.social/download?platform=windows&arch=arm64",
-        arch: "arm64",
-      },
-    ],
-  },
-  linux: {
-    name: "linux",
-    displayName: "Linux",
-    icon: "/img/linux-brands.svg",
-    screenshot: "/img/download-screenshot-linux.png",
-    downloads: [
-      {
-        label: "Linux Instructions",
-        url: "https://docs.cyd.social/docs/getting-started/download#cyd-for-linux",
-      },
-    ],
-  },
-};
 
 function DetectedPlatformSection({ platform }: { platform: PlatformInfo }) {
   const scrollY = useParallax();
@@ -78,7 +34,7 @@ function DetectedPlatformSection({ platform }: { platform: PlatformInfo }) {
               {platform.downloads.map((download, index) => (
                 <a key={index} className="buttonPrimary" href={download.url}>
                   <img
-                    src="/img/white-download.svg"
+                    src={useBaseUrl("/img/white-download.svg")}
                     alt=""
                     className="buttonIcon"
                   />
@@ -99,7 +55,7 @@ function DetectedPlatformSection({ platform }: { platform: PlatformInfo }) {
         >
           <img
             className={styles.downloadScreenshot}
-            src={platform.screenshot}
+            src={useBaseUrl(platform.screenshot)}
             alt={`Cyd for ${platform.displayName}`}
           />
         </div>
@@ -116,10 +72,13 @@ function AllPlatformsSection() {
           Download Cyd for desktop platforms
         </h2>
         <div className={styles.platformGrid}>
-          {Object.values(platforms).map((platform) => (
+          {Object.values(getPlatforms()).map((platform) => (
             <div key={platform.name} className={styles.platformCard}>
               <div className={styles.platformIcon}>
-                <img src={platform.icon} alt={`${platform.displayName} logo`} />
+                <img
+                  src={useBaseUrl(platform.icon)}
+                  alt={`${platform.displayName} logo`}
+                />
               </div>
               <div className={styles.platformContent}>
                 <h3>{platform.displayName}</h3>
@@ -139,6 +98,53 @@ function AllPlatformsSection() {
   );
 }
 
+function getPlatforms(): Record<string, PlatformInfo> {
+  return {
+    mac: {
+      name: "mac",
+      displayName: "Mac",
+      icon: "/img/apple-brands.svg",
+      screenshot: "/img/download-screenshot-mac.png",
+      downloads: [
+        {
+          label: "Download",
+          url: "https://api.cyd.social/download?platform=macos",
+        },
+      ],
+    },
+    windows: {
+      name: "windows",
+      displayName: "Windows",
+      icon: "/img/windows-brands.svg",
+      screenshot: "/img/download-screenshot-windows.png",
+      downloads: [
+        {
+          label: "Download (x64)",
+          url: "https://api.cyd.social/download?platform=windows",
+          arch: "x64",
+        },
+        {
+          label: "Download (arm64)",
+          url: "https://api.cyd.social/download?platform=windows&arch=arm64",
+          arch: "arm64",
+        },
+      ],
+    },
+    linux: {
+      name: "linux",
+      displayName: "Linux",
+      icon: "/img/linux-brands.svg",
+      screenshot: "/img/download-screenshot-linux.png",
+      downloads: [
+        {
+          label: "Linux Instructions",
+          url: "https://docs.cyd.social/docs/getting-started/download#cyd-for-linux",
+        },
+      ],
+    },
+  };
+}
+
 export default function Download() {
   const [detectedPlatform, setDetectedPlatform] = useState<PlatformInfo | null>(
     null
@@ -146,6 +152,7 @@ export default function Download() {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
+      const platforms = getPlatforms();
       const platform = navigator.platform.toLowerCase();
       const userAgent = navigator.userAgent.toLowerCase();
 
