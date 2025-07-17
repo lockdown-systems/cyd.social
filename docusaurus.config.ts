@@ -41,6 +41,44 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        redirects: [
+          {
+            from: "/help-shape-the-future-of-cyd/",
+            to: "https://lockdown.systems/help-shape-the-future-of-cyd/",
+          },
+          {
+            from: "/migrate-your-tweets-to-bluesky-with-the-latest-version-of-cyd/",
+            to: "https://lockdown.systems/migrate-your-tweets-to-bluesky-with-the-latest-version-of-cyd/",
+          },
+          {
+            from: "/cyd-is-now-open-source/",
+            to: "https://lockdown.systems/cyd-is-now-open-source/",
+          },
+          {
+            from: "/want-to-quit-x-in-2025-heres-how-to-do-it-the-right-way-with-cyd/",
+            to: "https://lockdown.systems/want-to-quit-x-in-2025-heres-how-to-do-it-the-right-way-with-cyd/",
+          },
+          {
+            from: "/backup-and-delete-your-bookmarks-from-x-with-the-latest-version-of-cyd/",
+            to: "https://lockdown.systems/backup-and-delete-your-bookmarks-from-x-with-the-latest-version-of-cyd/",
+          },
+          {
+            from: "/cyd-is-approximately-a-bazillion-times-faster-now/",
+            to: "https://lockdown.systems/cyd-is-approximately-a-bazillion-times-faster-now/",
+          },
+          {
+            from: "/delete-all-your-tweets-for-free-with-cyd/",
+            to: "https://lockdown.systems/delete-all-your-tweets-for-free-with-cyd/",
+          },
+        ],
+      },
+    ],
+  ],
+
   themeConfig: {
     image: "img/cyd-social-card.png",
     colorMode: {
