@@ -12,8 +12,8 @@ const config: Config = {
     v4: true,
   },
 
-  url: "https://cyd.social;",
-  baseUrl: "/",
+  url: "https://lockdown-systems.github.io",
+  baseUrl: "/cyd.social/",
 
   // GitHub pages deployment config
   organizationName: "lockdown-systems",
