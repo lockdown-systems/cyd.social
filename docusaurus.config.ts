@@ -54,7 +54,7 @@ const config: Config = {
         src: "img/cyd.svg",
       },
       items: [
-        { to: "/", label: "Home", position: "left", activeClassName: "" },
+        { to: "/", label: "Home", position: "left", exact: true },
         { to: "/pricing/", label: "Pricing", position: "left" },
         {
           to: "https://opencollective.com/lockdown-systems",
