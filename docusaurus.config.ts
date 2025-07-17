@@ -62,6 +62,10 @@ const config: Config = {
           position: "left",
         },
         {
+          label: "Collective",
+          to: "https://lockdown.systems/",
+        },
+        {
           to: "https://dash.cyd.social/",
           label: "Manage Account",
           position: "right",
@@ -78,36 +82,22 @@ const config: Config = {
       style: "light",
       links: [
         {
-          html: `<a href="https://bsky.app/profile/cyd.social"><img src="/img/bluesky-brands.svg" alt="Bluesky" rel="me"></a>`,
-        },
-        {
-          html: `<a href="https://infosec.exchange/@cyd"><img src="/img/mastodon-brands.svg" alt="Mastodon" rel="me"></a>`,
-        },
-        {
-          html: `<a href="https://x.com/cyd_social"><img src="/img/x-twitter-brands.svg" alt="X Twitter" rel="me"></a>`,
-        },
-        {
-          html: `<a href="https://github.com/lockdown-systems/cyd/"><img src="/img/github-brands.svg" alt="GitHub" rel="me"></a>`,
-        },
-        {
-          label: "Privacy Policy",
-          to: "/privacy/",
-        },
-        {
-          label: "Terms of Use",
-          to: "/terms/",
-        },
-        {
-          label: "Contact",
-          to: "/contact/",
-        },
-        {
-          label: "Lockdown Systems",
-          to: "https://lockdown.systems/",
-        },
-        {
-          label: "Credits",
-          to: "/credits/",
+          html: `
+            <div style="width: 100%;">
+              <div style="display: flex; justify-content: center; align-items: center; gap: 20px; margin-bottom: 20px; flex-wrap: wrap;">
+                <a href="https://bsky.app/profile/cyd.social" style="display: inline-block;"><img src="/img/bluesky-brands.svg" alt="Bluesky" rel="me" style="width: 24px; height: 24px;"></a>
+                <a href="https://infosec.exchange/@cyd" style="display: inline-block;"><img src="/img/mastodon-brands.svg" alt="Mastodon" rel="me" style="width: 24px; height: 24px;"></a>
+                <a href="https://x.com/cyd_social" style="display: inline-block;"><img src="/img/x-twitter-brands.svg" alt="X Twitter" rel="me" style="width: 24px; height: 24px;"></a>
+                <a href="https://github.com/lockdown-systems/cyd/" style="display: inline-block;"><img src="/img/github-brands.svg" alt="GitHub" rel="me" style="width: 24px; height: 24px;"></a>
+              </div>
+              <div style="display: flex; justify-content: center; align-items: center; gap: 30px; flex-wrap: wrap;">
+                <a href="/privacy/" style="text-decoration: none; color: var(--ifm-footer-link-color);">Privacy Policy</a>
+                <a href="/terms/" style="text-decoration: none; color: var(--ifm-footer-link-color);">Terms of Use</a>
+                <a href="/contact/" style="text-decoration: none; color: var(--ifm-footer-link-color);">Contact</a>
+                <a href="/credits/" style="text-decoration: none; color: var(--ifm-footer-link-color);">Credits</a>
+              </div>
+            </div>
+          `,
         },
       ],
       copyright: "Cyd is a project of Lockdown Systems LLC",
