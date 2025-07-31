@@ -3,7 +3,7 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 // Base URL configuration
-const baseUrl = "/cyd.social/";
+const baseUrl = "/";
 
 const config: Config = {
   title: "Cyd",
@@ -15,7 +15,7 @@ const config: Config = {
     v4: true,
   },
 
-  url: "https://lockdown-systems.github.io",
+  url: "https://cyd.social",
   baseUrl,
 
   // GitHub pages deployment config
