@@ -16,3 +16,4 @@ The icons used on the homepage and/or within the Cyd desktop app are thanks to F
 - "Enshittification-Proof" [icon by Freepik](https://www.flaticon.com/free-icon/no-poop_1742505)
 - "Open Source" [icon by juicy_fish](https://www.flaticon.com/free-icon/programming_6062646)
 - "Import X Archive" [icon by Amazona Adorada](https://www.flaticon.com/authors/amazona-adorada)
+- "Tombstone" [icon by designbydai](https://www.flaticon.com/free-icon/tombstone_8602715)
