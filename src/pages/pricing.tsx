@@ -70,7 +70,7 @@ const pricingPlans: PricingPlan[] = [
     name: "Cyd for Teams",
     description:
       "Give your employees privacy, peace of mind, and protection from doxing and harassment.",
-    price: "$50",
+    price: "$36",
     priceNote: "/user/year (plus taxes)",
     buttonText: "Get Cyd for Teams",
     buttonUrl: "https://dash.cyd.social/#/teams/new",
