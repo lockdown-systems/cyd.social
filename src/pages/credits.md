@@ -17,3 +17,4 @@ The icons used on the homepage and/or within the Cyd desktop app are thanks to F
 - "Open Source" [icon by juicy_fish](https://www.flaticon.com/free-icon/programming_6062646)
 - "Import X Archive" [icon by Amazona Adorada](https://www.flaticon.com/authors/amazona-adorada)
 - "Tombstone" [icon by designbydai](https://www.flaticon.com/free-icon/tombstone_8602715)
+- "Browse Archive" [icon by Talha Dogar](https://www.flaticon.com/free-icon/binder_5004363)
