@@ -46,9 +46,8 @@ const pricingPlans: PricingPlan[] = [
   {
     name: "Premium",
     description:
-      "With a premium plan, you can selectively delete other data too.",
+      "With a premium plan, for 1 year, you can selectively delete other data too.",
     price: "$36",
-    priceNote: "/year (plus taxes)",
     buttonText: "Get Premium",
     buttonUrl: "https://dash.cyd.social/#/dashboard/buy",
     buttonStyle: "premium",
