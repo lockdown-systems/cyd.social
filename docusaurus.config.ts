@@ -120,7 +120,6 @@ const config: Config = {
           label: "Docs",
           position: "left",
         },
-        { to: "/blog", label: "Dev Blog", position: "left" },
         {
           label: "Collective",
           to: "https://lockdown.systems/",
@@ -130,11 +129,6 @@ const config: Config = {
           type: "html",
           position: "left",
           value: "<div class='navbar__separator'></div>",
-        },
-        {
-          to: "https://dash.cyd.social/",
-          label: "Manage Account",
-          position: "right",
         },
         {
           to: "https://opencollective.com/lockdown-systems",
@@ -154,24 +148,26 @@ const config: Config = {
       links: [
         {
           html: `
-            <div style="width: 100%;">
-              <div style="display: flex; justify-content: center; align-items: center; gap: 20px; margin-bottom: 20px; flex-wrap: wrap;">
+            <div style="width: 100%; box-sizing: border-box; padding: 0 1rem;">
+              <div style="display: flex; justify-content: center; align-items: center; column-gap: 20px; margin-bottom: 20px; flex-wrap: wrap;">
                 <a href="https://bsky.app/profile/cyd.social" style="display: inline-block;"><img src="${baseUrl}img/bluesky-brands.svg" alt="Bluesky" rel="me" style="width: 24px; height: 24px;"></a>
                 <a href="https://infosec.exchange/@cyd" style="display: inline-block;"><img src="${baseUrl}img/mastodon-brands.svg" alt="Mastodon" rel="me" style="width: 24px; height: 24px;"></a>
                 <a href="https://x.com/cyd_social" style="display: inline-block;"><img src="${baseUrl}img/x-twitter-brands.svg" alt="X Twitter" rel="me" style="width: 24px; height: 24px;"></a>
                 <a href="https://github.com/lockdown-systems/cyd/" style="display: inline-block;"><img src="${baseUrl}img/github-brands.svg" alt="GitHub" rel="me" style="width: 24px; height: 24px;"></a>
               </div>
-              <div style="display: flex; justify-content: center; align-items: center; gap: 30px; flex-wrap: wrap;">
+              <div style="display: flex; justify-content: center; align-items: center; column-gap: 20px; flex-wrap: wrap;">
                 <a href="${baseUrl}privacy/" style="text-decoration: none; color: var(--ifm-footer-link-color);">Privacy Policy</a>
                 <a href="${baseUrl}terms/" style="text-decoration: none; color: var(--ifm-footer-link-color);">Terms of Use</a>
                 <a href="${baseUrl}contact/" style="text-decoration: none; color: var(--ifm-footer-link-color);">Contact</a>
                 <a href="${baseUrl}credits/" style="text-decoration: none; color: var(--ifm-footer-link-color);">Credits</a>
+                <a href="/blog" style="text-decoration: none; color: var(--ifm-footer-link-color);">Development Blog</a>
+                <a href="https://dash.cyd.social/" style="text-decoration: none; color: var(--ifm-footer-link-color);">Manage Cyd Account</a>
               </div>
+              <p style="font-size: 0.8em; width: 100%; margin: 20px auto 0; text-align: center; box-sizing: border-box; overflow-wrap: break-word;">Cyd is a project of <a href="https://lockdown.systems/">Lockdown Systems</a>, a worker owned collective. Our fiscal sponsorship is <a href="https://www.lucyparsonslabs.com">Lucy Parsons Labs</a>, a 501(c)(3) nonprofit.</p>
             </div>
           `,
         },
       ],
-      copyright: "Cyd is a project of Lockdown Systems LLC",
     },
     prism: {
       theme: prismThemes.github,

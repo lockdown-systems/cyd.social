@@ -175,6 +175,27 @@
   vertical-align: middle;
 }
 
+/* Footer html items need to be block-level for word wrapping */
+.footer__link-item {
+  display: block;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.footer .footer__col {
+  max-width: 100%;
+  min-width: 0;
+}
+
+/* Suppress the green primary-color hover effect on footer html items */
+.footer__link-item:hover {
+  color: inherit;
+}
+
+.footer__link-item:hover a {
+  color: var(--ifm-footer-link-color);
+}
+
 /* Docs: link underlines for accessibility */
 .theme-doc-markdown a:link,
 .theme-doc-markdown a:visited {
