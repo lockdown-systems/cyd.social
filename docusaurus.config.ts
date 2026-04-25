@@ -23,7 +23,12 @@ const config: Config = {
   projectName: "cyd.social",
 
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
+
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: "warn",
+    },
+  },
 
   i18n: {
     defaultLocale: "en",
@@ -163,7 +168,7 @@ const config: Config = {
                 <a href="/blog" style="text-decoration: none; color: var(--ifm-footer-link-color);">Development Blog</a>
                 <a href="https://dash.cyd.social/" style="text-decoration: none; color: var(--ifm-footer-link-color);">Manage Cyd Account</a>
               </div>
-              <p style="font-size: 0.8em; width: 100%; margin: 20px auto 0; text-align: center; box-sizing: border-box; overflow-wrap: break-word;">Cyd is a project of <a href="https://lockdown.systems/">Lockdown Systems</a>, a worker owned collective. Our fiscal sponsorship is <a href="https://www.lucyparsonslabs.com">Lucy Parsons Labs</a>, a 501(c)(3) nonprofit.</p>
+              <p style="font-size: 0.8em; width: 100%; margin: 20px auto 0; text-align: center; box-sizing: border-box; overflow-wrap: break-word;">Cyd is a project of <a href="https://lockdown.systems/">Lockdown Systems</a>, a worker owned collective. Our fiscal sponsor is <a href="https://www.lucyparsonslabs.com">Lucy Parsons Labs</a>, a 501(c)(3) nonprofit.</p>
             </div>
           `,
         },
