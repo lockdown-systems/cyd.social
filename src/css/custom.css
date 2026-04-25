@@ -174,3 +174,18 @@
   height: 24px;
   vertical-align: middle;
 }
+
+/* Docs: link underlines for accessibility */
+.theme-doc-markdown a:link,
+.theme-doc-markdown a:visited {
+  text-decoration: underline;
+}
+
+.theme-doc-markdown a:hover {
+  text-decoration: none;
+}
+
+/* Docs: allow videos to be responsive */
+video {
+  max-width: 100%;
+}

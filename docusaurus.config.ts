@@ -34,8 +34,19 @@ const config: Config = {
     [
       "classic",
       {
-        docs: false, // Disable docs
-        blog: false, // Disable blog
+        docs: {
+          sidebarPath: "./sidebars.ts",
+        },
+        blog: {
+          showReadingTime: true,
+          feedOptions: {
+            type: ["rss", "atom"],
+            xslt: true,
+          },
+          onInlineTags: "warn",
+          onInlineAuthors: "warn",
+          onUntruncatedBlogPosts: "warn",
+        },
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -45,6 +56,12 @@ const config: Config = {
   ],
 
   plugins: [
+    [
+      "docusaurus-lunr-search",
+      {
+        languages: ["en"],
+      },
+    ],
     [
       "@docusaurus/plugin-client-redirects",
       {
@@ -98,17 +115,30 @@ const config: Config = {
         { to: "/", label: "Home", position: "left", exact: true },
         { to: "/pricing/", label: "Pricing", position: "left" },
         {
-          to: "https://opencollective.com/lockdown-systems",
-          label: "Donate",
+          type: "docSidebar",
+          sidebarId: "docsSidebar",
+          label: "Docs",
           position: "left",
         },
+        { to: "/blog", label: "Dev Blog", position: "left" },
         {
           label: "Collective",
           to: "https://lockdown.systems/",
+          position: "left",
+        },
+        {
+          type: "html",
+          position: "left",
+          value: "<div class='navbar__separator'></div>",
         },
         {
           to: "https://dash.cyd.social/",
           label: "Manage Account",
+          position: "right",
+        },
+        {
+          to: "https://opencollective.com/lockdown-systems",
+          label: "Donate",
           position: "right",
         },
         {
