@@ -138,7 +138,7 @@ function getPlatforms(): Record<string, PlatformInfo> {
       downloads: [
         {
           label: "Linux Instructions",
-          url: "https://docs.cyd.social/docs/getting-started/download#cyd-for-linux",
+          url: "/docs/getting-started/download#cyd-for-linux",
         },
       ],
     },

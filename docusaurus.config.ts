@@ -98,7 +98,7 @@ const config: Config = {
           {
             from: "/delete-all-your-tweets-for-free-with-cyd/",
             to: "https://lockdown.systems/delete-all-your-tweets-for-free-with-cyd/",
-          },
+          }
         ],
       },
     ],

@@ -47,7 +47,7 @@ function HomepageHeader() {
                 />
                 Download Cyd
               </Link>
-              <Link className="buttonSecondary" to="https://docs.cyd.social/">
+              <Link className="buttonSecondary" to="/docs/">
                 <img
                   src={useBaseUrl("/img/white-read.svg")}
                   alt=""
