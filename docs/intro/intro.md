@@ -23,7 +23,7 @@ Many of us go out of our way to protect our privacy. We install ad blockers to p
 
 Why should our social media posts, or for that matter our product reviews, ratings, comments, and upvotes, remain on the internet forever?
 
-If you've had an online presence for a long time, it might be a good idea to see what you've posted in the past and delete everything that you don't want out there. This is especially true if you're an activist, a journalist, a parent, or work for a company or non-profit that some people don't like. If you run a business, you might consider [providing this service to your employees](../cyd-for-teams/intro) as a benefit.
+If you've had an online presence for a long time, it might be a good idea to see what you've posted in the past and delete everything that you don't want out there. This is especially true if you're an activist, a journalist, a parent, or work for a company or non-profit that some people don't like. If you run a business, you might consider [providing this service to your employees](/docs/cyd-for-teams/intro) as a benefit.
 
 Finally, if you're one of the millions of people fleeing the X platform, it's better to delete all of your tweets (and unfollow everyone) but keep your account activated than to delete your account. This way, other people can't take over your username and impersonate you, and you can leave your account with a message telling your followers where to find you.
 
@@ -74,4 +74,4 @@ Cyd runs directly on your computer and not on our servers. Cyd is designed so th
 
 ---
 
-Ready to get started? [Download Cyd now](../getting-started/download).
+Ready to get started? [Download Cyd now](/docs/getting-started/download).
