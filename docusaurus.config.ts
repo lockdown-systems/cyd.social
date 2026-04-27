@@ -135,19 +135,26 @@ const config: Config = {
           position: "left",
         },
         {
+          label: "Login",
+          to: "https://dash.cyd.social/",
+          position: "left"
+        },
+        {
           type: "html",
           position: "left",
+          className: "hideOnMobileNav",
           value: "<div class='navbar__separator'></div>",
         },
         {
           to: "https://opencollective.com/lockdown-systems",
-          label: "Donate",
+          html: `<img src="${baseUrl}img/heart-orange.svg" alt="" class="buttonIcon donateIconNormal" /><img src="${baseUrl}img/heart-white.svg" alt="" class="buttonIcon donateIconHover" /> Donate`,
+          className: "buttonPrimaryOutline buttonSmall hideOnMobileNav",
           position: "right",
         },
         {
           to: "/download/",
           html: `<img src="${baseUrl}img/white-download.svg" alt="" class="buttonIcon" /> Download Cyd`,
-          className: "buttonSecondary buttonSmall",
+          className: "buttonSecondary buttonSmall hideOnMobileNav",
           position: "right",
         },
       ],
@@ -170,7 +177,6 @@ const config: Config = {
                 <a href="${baseUrl}contact/" style="text-decoration: none; color: var(--ifm-footer-link-color);">Contact</a>
                 <a href="${baseUrl}credits/" style="text-decoration: none; color: var(--ifm-footer-link-color);">Credits</a>
                 <a href="/blog" style="text-decoration: none; color: var(--ifm-footer-link-color);">Development Blog</a>
-                <a href="https://dash.cyd.social/" style="text-decoration: none; color: var(--ifm-footer-link-color);">Manage Cyd Account</a>
               </div>
               <p style="font-size: 0.8em; width: 100%; margin: 20px auto 0; text-align: center; box-sizing: border-box; overflow-wrap: break-word;">Cyd is a project of <a href="https://lockdown.systems/">Lockdown Systems</a>, a worker owned collective. Our fiscal sponsor is <a href="https://www.lucyparsonslabs.com">Lucy Parsons Labs</a>, a 501(c)(3) nonprofit.</p>
             </div>
