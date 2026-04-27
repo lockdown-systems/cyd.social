@@ -155,6 +155,18 @@
   font-weight: bold;
 }
 
+/* Hide certain navbar items from the mobile top bar (they still appear in the sidebar menu) */
+@media (max-width: 996px) {
+  .navbar__items .hideOnMobileNav,
+  .navbar__items--right .hideOnMobileNav {
+    display: none !important;
+  }
+
+  .navbar-sidebar .hideOnMobileNav .navbar__separator {
+    margin-top: 2rem;
+  }
+}
+
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
   .buttonPrimary,
@@ -169,8 +181,61 @@
   }
 }
 
+/* Donate button heart icon swap on hover */
+.donateIconHover {
+  display: none !important;
+}
+
+.buttonPrimaryOutline:hover .donateIconNormal {
+  display: none !important;
+}
+
+.buttonPrimaryOutline:hover .donateIconHover {
+  display: inline !important;
+}
+
+.navbar__items--right .buttonPrimaryOutline {
+  margin-right: 0.5rem !important;
+}
+
 .footer img {
   width: 24px;
   height: 24px;
   vertical-align: middle;
+}
+
+/* Footer html items need to be block-level for word wrapping */
+.footer__link-item {
+  display: block;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.footer .footer__col {
+  max-width: 100%;
+  min-width: 0;
+}
+
+/* Suppress the green primary-color hover effect on footer html items */
+.footer__link-item:hover {
+  color: inherit;
+}
+
+.footer__link-item:hover a {
+  color: var(--ifm-footer-link-color);
+}
+
+/* Docs: link underlines for accessibility */
+.theme-doc-markdown a:link,
+.theme-doc-markdown a:visited {
+  text-decoration: underline;
+}
+
+.theme-doc-markdown a:hover {
+  text-decoration: none;
+}
+
+/* Docs: allow videos to be responsive */
+video {
+  max-width: 100%;
 }
