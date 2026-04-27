@@ -146,7 +146,7 @@ const config: Config = {
           value: "<div class='navbar__separator'></div>",
         },
         {
-          to: "https://opencollective.com/lockdown-systems",
+          to: "https://lockdown.systems/donate/",
           html: `<img src="${baseUrl}img/heart-orange.svg" alt="" class="buttonIcon donateIconNormal" /><img src="${baseUrl}img/heart-white.svg" alt="" class="buttonIcon donateIconHover" /> Donate`,
           className: "buttonPrimaryOutline buttonSmall hideOnMobileNav",
           position: "right",
