@@ -9,9 +9,7 @@ title: Download
 
 ## Cyd for Windows and Mac
 
-If you're using Windows or Mac, download Cyd from the main website:
-
-<a class="button button--primary button--lg" href="https://cyd.social/download/">Download Cyd</a>
+<a class="button button--primary button--lg" href="/download/">Download Cyd for Mac or Windows</a>
 
 ## Cyd for Linux
 
