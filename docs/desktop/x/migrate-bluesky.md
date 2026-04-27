@@ -48,7 +48,7 @@ When you're ready to migrate your tweets, click **Continue to Review**. If all l
 
 :::info Migrating to Bluesky is a Premium feature
 
-You need a [Premium plan](../premium/intro) to migrate your tweets to Bluesky. If you don't have one yet, when you click **Start Migrating** you will be prompted to sign up for one to continue.
+You need a [Premium plan](../../premium/intro) to migrate your tweets to Bluesky. If you don't have one yet, when you click **Start Migrating** you will be prompted to sign up for one to continue.
 
 :::
 

@@ -12,7 +12,7 @@ These features are under beta testing right now and not available in the latest 
 
 With Cyd, you can delete all of the posts on your Facebook wall!
 
-Some of the Delete Options require a Premium plan - [learn more about Premium plans here](../premium/intro).
+Some of the Delete Options require a Premium plan - [learn more about Premium plans here](../../premium/intro).
 
 ## Delete Options
 

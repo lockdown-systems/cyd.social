@@ -1,8 +1,9 @@
 ---
 sidebar_position: 2
+title: Tour
 ---
 
-# Tour of Cyd
+# Tour of Cyd for Desktop
 
 When you open Cyd for the first time, you'll see a window like this:
 
@@ -12,7 +13,7 @@ When you open Cyd for the first time, you'll see a window like this:
 
 Most of the window shows the currently selected account. Since you haven't added any accounts yet, you're presented with the option to add a new account. At the moment, only the X platform is supported.
 
-Read more about [signing into your X account](../x/sign-in).
+Read more about [signing into your X account](x/sign-in).
 
 ## Sidebar
 
@@ -56,5 +57,5 @@ Resetting Cyd won't touch your Data Folder, so you won't lose any data. You'll j
 
 Each platform that Cyd supports works in its own unique way. To learn how to use each platform, refer to the documentation for that platform:
 
-- [X (formerly Twitter)](../x/sign-in)
+- [X (formerly Twitter)](x/sign-in)
 - _More platforms coming soon..._

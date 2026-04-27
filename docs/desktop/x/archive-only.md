@@ -10,7 +10,7 @@ Archive Only Mode is a limited version of Cyd that lets you use the features tha
 
 To continue, you'll need to have already [requested your X archive](https://help.x.com/en/managing-your-account/how-to-download-your-x-archive) from X, and then downloaded it, before deleting your X account.
 
-And in order to migrate your tweets to Bluesky, you'll also need a Cyd [premium plan](../premium/intro.md).
+And in order to migrate your tweets to Bluesky, you'll also need a Cyd [premium plan](../../premium/intro.md).
 
 Start by clicking Continue to **Import X Archive**.
 
