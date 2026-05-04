@@ -5,7 +5,7 @@ slug: /
 
 # Welcome to Cyd
 
-Cyd is an open source app that makes it easy for you to claw back your data from tech platforms.
+Cyd is an open source app that makes it easy for you to **Clawback Your Data** from tech platforms.
 
 - [Cyd for Mobile](/docs/mobile/download) supports **Bluesky**.
 - [Cyd for Desktop](/docs/desktop/download) supports **X (formerly Twitter)**, with **Facebook** coming soon.
@@ -38,7 +38,7 @@ If you're one of the millions of people fleeing the X platform, it's better to d
 
 ## How Cyd Works
 
-- **Install** — Get Cyd for Mobile (iOS/Android) for Bluesky, or Cyd for Desktop (Windows/macOS/Linux) for X.
+- **Install** — Get Cyd for Mobile for Bluesky, or Cyd for Desktop for X.
 - **Login** — Connect your account.
 - **Back up** — Cyd saves a local, private copy of your data.
 - **Delete** — Tell Cyd exactly what you want removed. Sit back and watch as Cyd does exactly what you ask.
