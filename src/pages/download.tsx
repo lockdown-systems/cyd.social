@@ -100,6 +100,34 @@ function AllPlatformsSection() {
 
 function getPlatforms(): Record<string, PlatformInfo> {
   return {
+    iphone: {
+      name: "iphone",
+      displayName: "iPhone",
+      icon: "/img/apple-brands.svg",
+      screenshot: "/img/download-screenshot-mac.png",
+      downloads: [
+        {
+          label: "iOS App Store",
+          url: "#",
+        },
+      ],
+    },
+    android: {
+      name: "android",
+      displayName: "Android",
+      icon: "/img/android-brands.svg",
+      screenshot: "/img/download-screenshot-mac.png",
+      downloads: [
+        {
+          label: "Android Play Store",
+          url: "#",
+        },
+        {
+          label: "APK from GitHub",
+          url: "https://github.com/lockdown-systems/cyd-mobile/releases",
+        },
+      ],
+    },
     mac: {
       name: "mac",
       displayName: "Mac",
