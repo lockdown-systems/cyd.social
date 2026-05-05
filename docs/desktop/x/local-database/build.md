@@ -6,7 +6,7 @@ sidebar_position: 2
 
 When you build your database from scratch, Cyd learns your tweet history the same way you would: By loading your profile to see your tweets, then scrolling down over and over until it gets to the bottom. If you don't have a lot of data in your X account, this is the best way to build your database.
 
-:::warning Limits to building a local database from scratch
+:::warning[Limits to building a local database from scratch]
 
 Unfortunately, X will only show you about between 2,000 and 3,000 of your most recent tweets and likes in this way. Even if you delete all of those, X simply won't show you any of your tweet or like history on your profile page anymore, even if you have thousands of older tweets.
 
@@ -36,7 +36,7 @@ When you click **Continue to Review**, you have a chance to review your options 
 
 When you're ready, click **Build Database**.
 
-:::tip Disable sleep
+:::tip[Disable sleep]
 
 Depending on how much data you have in your X account and how often X rate limits you, building your database could take a long time. Make sure to disable sleep on your computer. There are guides for how to do this in the [Disable Sleep](../../tips/disable-sleep/intro) section.
 
@@ -50,7 +50,7 @@ When you start building your database, you can watch the embedded browser to see
 
 As Cyd works, you can see what step it's currently on. In the screenshot above, it finished the "Logging in" step and it's working on the "Saving tweets" step. At any point you can click **Pause** to pause Cyd's work, or **Cancel** to cancel the work completely.
 
-:::warning Rate limits
+:::warning[Rate limits]
 
 Cyd saves your data as fast as it can, but X imposes limits on how fast this is. These are the same limits you would hit if you manually scrolled through your X account really, really fast.
 
@@ -58,7 +58,7 @@ If you hit a rate limit, Cyd will wait for it to expire. Typically, you will nee
 
 :::
 
-:::info Clicking in the browser
+:::info[Clicking in the browser]
 
 When Cyd is controlling the embedded browser on your behalf, clicking in it is disabled, as you might mess with what Cyd is trying to do. However, if you ever encounter a situation where Cyd is stuck and would continue if only you could click something, you can click the **Enable Clicking in Browser** to allow you to click. You can click **Disable Clicking in Browser** disables this again.
 

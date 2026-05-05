@@ -29,7 +29,7 @@ Click the **download** link, or load https://x.com/settings/download_your_data a
 
 When you download your archive, you will download a ZIP file.
 
-:::warning Are you using Safari?
+:::warning[Are you using Safari?]
 
 If you use Safari in macOS, when you download your archive ZIP file, your Mac will automatically unzip it.
 
@@ -55,7 +55,7 @@ In the right sidebar, you will also see the buttons **Browse Archive** and **Ope
 
 The right sidebar also includes a summary of the amount of data in your local database. In the screenshot above, you can see the local database contains 76 saved tweets, and so far, none of the tweets have been migrated to Bluesky. You can see other metrics by scrolling down.
 
-:::tip The official X archive is missing some data
+:::tip[The official X archive is missing some data]
 
 X only gives you some of your data when you request an archive. Click **Backup More Data from X** if you'd like to download data that's missing from the official X archive. You'll be able to save your bookmarks, save HTML versions of your tweets, and download a robust backup of your direct messages from there.
 

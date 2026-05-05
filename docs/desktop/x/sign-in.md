@@ -8,19 +8,19 @@ When you're on the new account screen in Cyd, choose the X platform. You'll see 
 
 ![Sign in to X](./img/sign-in.png)
 
-:::tip Already deleted your X account?
+:::tip[Already deleted your X account?]
 If you've already deleted your account but you have an archive of your data, click **Import Archive Only**. This will bring you to [Archive Only Mode](./archive-only).
 :::
 
 Cyd (the bird) is at the top of the window giving you instructions, and the bottom part of the window is Cyd's embedded web browser.
 
-:::tip The Cyd server doesn't have any access to your password or your data
+:::tip[The Cyd server doesn't have any access to your password or your data]
 When you sign into your X account within Cyd's embedded browser, it's the same as signing in using any other browser on your computer: **Your password is sent directly from your computer to X's servers and it's encrypted using HTTPS. Cyd's server doesn't collect your password or have any access to your account.** Only the Cyd app running locally on your computer does.
 :::
 
 Go ahead and sign in to your X account using your username and password.
 
-:::info Do you use 2FA?
+:::info[Do you use 2FA?]
 If you protect your X account with two-factor authentication, you'll need to enter the 2FA code you get to sign in here too. If you use a U2F security key (like a Yubikey), the screen will turn white when it's time for you to press the button. [Read more](./tips/u2f).
 :::
 

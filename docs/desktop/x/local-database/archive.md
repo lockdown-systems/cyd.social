@@ -28,7 +28,7 @@ When you click **Continue to Review**, you have a chance to review your options 
 
 When you're ready, click **Start Archiving**.
 
-:::tip Disable sleep
+:::tip[Disable sleep]
 
 Depending on how much data you have in your X account and how often X rate limits you, archiving additional data could take a long time. Make sure to disable sleep on your computer. There are guides for how to do this in the [Disable Sleep](../../tips/disable-sleep/intro) section.
 
@@ -40,7 +40,7 @@ When you start archiving additional data, you can watch the embedded browser to 
 
 ![Archiving additional data](./img/archive-saving.png)
 
-:::warning Rate limits
+:::warning[Rate limits]
 
 Cyd saves your data as fast as it can, but X imposes limits on how fast this is. These are the same limits you would hit if you manually scrolled through your X account really, really fast.
 

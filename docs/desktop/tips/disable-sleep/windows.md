@@ -23,7 +23,7 @@ Second, make sure your computer does not automatically go to sleep after being i
 
 Now you can safely run Cyd for an extended period of time.
 
-:::warning Keep your laptop lid open
+:::warning[Keep your laptop lid open]
 
 Note that your computer will still go to sleep if you close the laptop lid. So, don't close your laptop while you're doing a long-running Cyd session.
 

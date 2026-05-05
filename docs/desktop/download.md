@@ -5,9 +5,9 @@ title: Download
 
 # Download Cyd for Desktop
 
-![](./img/cyd-desktop-download.png)
+Download Cyd for Windows, Mac, or Linux.
 
-## Cyd for Windows and Mac
+![](./img/cyd-desktop-download.png)
 
 <a class="button button--primary button--lg" href="/download/">Download Cyd for Mac or Windows</a>
 

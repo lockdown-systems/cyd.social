@@ -34,7 +34,7 @@ When you're ready, click **Start Deleting**.
 
 Cyd will use Facebook's Manage Posts feature to delete every post on your wall that can be deleted.
 
-:::info Your language settings might temporarily change
+:::info[Your language settings might temporarily change]
 
 Cyd requires that your Facebook language be set to English while it's deleting your data. If your language isn't English, Cyd will change it to English, delete your data, and then change it back.
 

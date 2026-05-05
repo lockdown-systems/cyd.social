@@ -6,7 +6,7 @@ sidebar_position: 6
 
 Once you've built your local database, Cyd can help you migrate your old tweets into Bluesky!
 
-:::info Cyd will only migrate tweets where it makes sense
+:::info[Cyd will only migrate tweets where it makes sense]
 
 Cyd won't migrate retweets (that wouldn't make sense), and it won't migrate tweets that are replies to users on X (that also wouldn't make sense.) But it will migrate the rest of your own tweets, including replies to yourself. This means that your old Twitter threads will stay intact.
 
@@ -14,7 +14,7 @@ Cyd will also migrate images and videos to Bluesky.
 
 :::
 
-:::tip Create a new Bluesky account for your archive of tweets
+:::tip[Create a new Bluesky account for your archive of tweets]
 
 While you can migrate your tweets into your main Bluesky account if you want, we recommend that you create a new Bluesky account just for your old archive. This way you can make it clear in this account's name and profile that it's an archive from X.
 
@@ -46,7 +46,7 @@ After you connect a Bluesky account, Cyd will show you a pie chart of all of you
 
 When you're ready to migrate your tweets, click **Continue to Review**. If all looks good, click **Start Migrating**.
 
-:::info Migrating to Bluesky is a Premium feature
+:::info[Migrating to Bluesky is a Premium feature]
 
 You need a [Premium plan](../../premium/intro) to migrate your tweets to Bluesky. If you don't have one yet, when you click **Start Migrating** you will be prompted to sign up for one to continue.
 
@@ -58,7 +58,7 @@ You can watch your tweets quickly flash by on the screen as Cyd posts them to Bl
 
 ![Posting tweets to Bluesky](./img/migrate-bluesky-migrating.png)
 
-:::warning Rate limits
+:::warning[Rate limits]
 
 Cyd migrates your tweets to Bluesky as fast as it can, but Bluesky imposes limits on how fast this is. You're allowed to post 1,666 times in an hour, and 11,666 times in a day. [Read more](https://docs.bsky.app/docs/advanced-guides/rate-limits) about Bluesky's rate limits.
 

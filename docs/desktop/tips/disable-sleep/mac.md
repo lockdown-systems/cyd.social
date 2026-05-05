@@ -26,7 +26,7 @@ Now you can safely run Cyd for an extended period of time.
 
 Remember to disable Caffeine when you don't need to use it.
 
-:::warning Keep your laptop lid open
+:::warning[Keep your laptop lid open]
 
 Note that your Mac will still go to sleep if you close the laptop lid. So, don't close your Mac while you're doing a long-running Cyd session.
 

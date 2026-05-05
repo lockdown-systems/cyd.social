@@ -54,7 +54,7 @@ If you're abandoning your X account, we recommend that you do this. The list of 
 
 Delete all of the **likes** in your account.
 
-:::info Likes are private
+:::info[Likes are private]
 
 Likes are only visible to you on X (and, of course, to Elon Musk, X's employees, and anyone who can hack your X account). If you're primarily concerned about cleaning up OSINT crumbs about yourself, deleting your likes are optional.
 
@@ -118,7 +118,7 @@ When you're unfollowing everyone and deleting direct messages, you can watch the
 
 ![Deleting data from X](./img/delete-deleting.png)
 
-:::warning Rate limits
+:::warning[Rate limits]
 
 Cyd deletes your data as fast as it can, but X imposes limits on how fast this is. If you hit a rate limit, Cyd will wait for it to expire. Typically, you will need to wait less than 15 minutes before you can proceed. The second that X's rate limit expires, Cyd goes back to work delete your data.
 
