@@ -13,10 +13,8 @@ When you open Cyd for the first time, you'll see an onboarding wizard that expla
 
 To start, you add your Bluesky account to Cyd. You can add as many accounts as you want.
 
-:::info[Don't worry]
-
-You're giving the app on your phone access to your Bluesky account. The developers of Cyd can't access your data.
-
+:::tip[Don't worry, you're not sharing your data with us]
+You're giving the _app on your phone_ access to your Bluesky account. The developers of Cyd can't access your data.
 :::
 
 Type in your Bluesky handle, typically _username.bsky.social_.

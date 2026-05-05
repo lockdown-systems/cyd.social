@@ -11,7 +11,7 @@ Before you can delete data, Cyd needs to save a local archive of it. Choose whic
 
 Before Cyd starting saving your data, confirm that this is what you want. When you're ready, click **Save My Data**.
 
-Immediately, Cyd will start downloading all of the data you chose to save, as quickly as the Bluesky API allows. You can watch as Cyd downloads each post.
+Cyd will immediately start downloading all of the data you chose to save, as quickly as the Bluesky API allows. You can watch as Cyd downloads each post.
 
 ![Automatically saving your data](./img/save-automation.png)
 
