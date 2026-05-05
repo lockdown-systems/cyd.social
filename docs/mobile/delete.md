@@ -25,7 +25,7 @@ You can delete the following data:
 
 - **Delete your posts.** If you want, you can only delete older posts by setting a days threshold. You can also keep the posts that had engagement or went viral by setting likes or reposts thresholds, and delete all the other cruft. You can also choose to keep your threads intact.
 
-  For example, you can delete all posts older than 30 days unless they received at least 1000 likes.
+  For example, you can delete all posts older than 30 days unless they received at least 100 likes.
 - **Delete your reposts.** You can set a days threshold if you want.
 - **Delete your likes.** You can set a days threshold if you want.
 - **Delete my chat messages.** You can set a days threshold if you want. Note that this only deletes the messages on _your side_ of the conversation.

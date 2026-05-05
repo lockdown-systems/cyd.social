@@ -35,8 +35,7 @@ function HomepageHeader() {
               Tech platforms can't be trusted.
             </Heading>
             <p className={styles.heroSubtitle}>
-              It's time to regain control of your data. Backup and delete all of
-              your tweets, and migrate them to Bluesky.
+              It's time to regain control of your data. Backup and delete your posts, except for what you want to keep. Cyd supports <strong>X (formerly Twitter)</strong> and <strong>Bluesky</strong>.
             </p>
             <div className={styles.heroButtons}>
               <Link className="buttonPrimary" to="/download/">
