@@ -78,3 +78,8 @@ You might want to pause automation and use your phone for other things, and then
 
 ## Finished Deleting
 
+When Cyd is finished deleting your data, it will show you a summary of what was deleted:
+
+![Summary of what was deleted](./img/delete-finished.png)
+
+From this point, you can [browse the archive](./browse) of your data, including what you've deleted, or [schedule deletion](./schedule).
