@@ -160,7 +160,7 @@ function getPlatforms(): Record<string, PlatformInfo> {
       name: "android",
       displayName: "Android",
       icon: "/img/android-brands.svg",
-      screenshot: "/img/download-screenshot-mac.png",
+      screenshot: "/img/download-screenshot-android.png",
       isMobile: true,
       downloads: [
         {
@@ -228,9 +228,6 @@ export default function Download() {
       const platforms = getPlatforms();
       const platform = navigator.platform.toLowerCase();
       const userAgent = navigator.userAgent.toLowerCase();
-
-      setDetectedPlatform(platforms.android);
-      return;
 
       if (/iphone|ipad|ipod/.test(userAgent)) {
         setDetectedPlatform(platforms.iphone);
