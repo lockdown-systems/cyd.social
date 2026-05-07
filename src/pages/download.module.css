@@ -81,7 +81,10 @@
   width: auto;
   max-width: 100%;
 }
-
+.platformNote {
+  margin-top: 1.5rem;
+  color: #666666;
+}
 /* All platforms section */
 .allPlatformsSection {
   padding: 4rem 0;

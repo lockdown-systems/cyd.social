@@ -44,7 +44,17 @@ function DetectedPlatformSection({ platform }: { platform: PlatformInfo }) {
               ))}
             </div>
             <p className={styles.otherLinks}>
-              <a href="#other-platforms">Other platforms</a>
+              <a href="#mobile-platforms">Other platforms</a>
+            </p>
+          </div>
+
+          <div>
+            <p className={styles.platformNote}>
+              {platform.isMobile ? (
+                <>Cyd for {platform.displayName} supports <strong>Bluesky</strong>. Looking to delete your data on X? Use <a href="#desktop-platforms">Cyd for Desktop</a> instead.</>
+              ) : (
+                <>Cyd for {platform.displayName} supports <strong>X (formerly Twitter)</strong>. Looking to delete data on Bluesky? Use <a href="#mobile-platforms">Cyd for Mobile</a> instead.</>
+              )}
             </p>
           </div>
         </div>
@@ -69,7 +79,7 @@ function MobilePlatformsSection() {
   const mobilePlatforms = ["iphone", "android"];
   const platforms = getPlatforms();
   return (
-    <section className={styles.allPlatformsSection} id="other-platforms">
+    <section className={styles.allPlatformsSection} id="mobile-platforms">
       <div className={styles.container}>
         <h2 className={styles.sectionTitle}>Cyd for Mobile</h2>
         <p className={styles.sectionSubtitle}>Gain control of your Bluesky data</p>
@@ -107,7 +117,7 @@ function DesktopPlatformsSection() {
   const desktopPlatforms = ["mac", "windows", "linux"];
   const platforms = getPlatforms();
   return (
-    <section className={styles.allPlatformsSection}>
+    <section className={styles.allPlatformsSection} id="desktop-platforms">
       <div className={styles.container}>
         <h2 className={styles.sectionTitle}>Cyd for Desktop</h2>
         <p className={styles.sectionSubtitle}>Gain control of your X (formerly Twitter) data</p>
