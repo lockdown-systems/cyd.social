@@ -9,6 +9,7 @@ interface PlatformInfo {
   displayName: string;
   icon: string;
   screenshot: string;
+  isMobile?: boolean;
   downloads: Array<{
     label: string;
     url: string;
@@ -54,7 +55,7 @@ function DetectedPlatformSection({ platform }: { platform: PlatformInfo }) {
           }}
         >
           <img
-            className={styles.downloadScreenshot}
+            className={`${styles.downloadScreenshot}${platform.isMobile ? ` ${styles.mobileScreenshot}` : ""}`}
             src={useBaseUrl(platform.screenshot)}
             alt={`Cyd for ${platform.displayName}`}
           />
@@ -64,34 +65,76 @@ function DetectedPlatformSection({ platform }: { platform: PlatformInfo }) {
   );
 }
 
-function AllPlatformsSection() {
+function MobilePlatformsSection() {
+  const mobilePlatforms = ["iphone", "android"];
+  const platforms = getPlatforms();
   return (
     <section className={styles.allPlatformsSection} id="other-platforms">
       <div className={styles.container}>
-        <h2 className={styles.sectionTitle}>
-          Download Cyd for desktop platforms
-        </h2>
+        <h2 className={styles.sectionTitle}>Cyd for Mobile</h2>
+        <p className={styles.sectionSubtitle}>Gain control of your Bluesky data</p>
         <div className={styles.platformGrid}>
-          {Object.values(getPlatforms()).map((platform) => (
-            <div key={platform.name} className={styles.platformCard}>
-              <div className={styles.platformIcon}>
-                <img
-                  src={useBaseUrl(platform.icon)}
-                  alt={`${platform.displayName} logo`}
-                />
+          {mobilePlatforms.map((key) => {
+            const platform = platforms[key];
+            return (
+              <div key={platform.name} className={styles.platformCard}>
+                <div className={styles.platformIcon}>
+                  <img
+                    src={useBaseUrl(platform.icon)}
+                    alt={`${platform.displayName} logo`}
+                  />
+                </div>
+                <div className={styles.platformContent}>
+                  <h3>{platform.displayName}</h3>
+                  <ul>
+                    {platform.downloads.map((download, index) => (
+                      <li key={index}>
+                        <a href={download.url}>{download.label}</a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-              <div className={styles.platformContent}>
-                <h3>{platform.displayName}</h3>
-                <ul>
-                  {platform.downloads.map((download, index) => (
-                    <li key={index}>
-                      <a href={download.url}>{download.label}</a>
-                    </li>
-                  ))}
-                </ul>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function DesktopPlatformsSection() {
+  const desktopPlatforms = ["mac", "windows", "linux"];
+  const platforms = getPlatforms();
+  return (
+    <section className={styles.allPlatformsSection}>
+      <div className={styles.container}>
+        <h2 className={styles.sectionTitle}>Cyd for Desktop</h2>
+        <p className={styles.sectionSubtitle}>Gain control of your X (formerly Twitter) data</p>
+        <div className={styles.platformGrid}>
+          {desktopPlatforms.map((key) => {
+            const platform = platforms[key];
+            return (
+              <div key={platform.name} className={styles.platformCard}>
+                <div className={styles.platformIcon}>
+                  <img
+                    src={useBaseUrl(platform.icon)}
+                    alt={`${platform.displayName} logo`}
+                  />
+                </div>
+                <div className={styles.platformContent}>
+                  <h3>{platform.displayName}</h3>
+                  <ul>
+                    {platform.downloads.map((download, index) => (
+                      <li key={index}>
+                        <a href={download.url}>{download.label}</a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
@@ -104,7 +147,8 @@ function getPlatforms(): Record<string, PlatformInfo> {
       name: "iphone",
       displayName: "iPhone",
       icon: "/img/apple-brands.svg",
-      screenshot: "/img/download-screenshot-mac.png",
+      screenshot: "/img/download-screenshot-iphone.png",
+      isMobile: true,
       downloads: [
         {
           label: "iOS App Store",
@@ -117,6 +161,7 @@ function getPlatforms(): Record<string, PlatformInfo> {
       displayName: "Android",
       icon: "/img/android-brands.svg",
       screenshot: "/img/download-screenshot-mac.png",
+      isMobile: true,
       downloads: [
         {
           label: "Android Play Store",
@@ -184,7 +229,14 @@ export default function Download() {
       const platform = navigator.platform.toLowerCase();
       const userAgent = navigator.userAgent.toLowerCase();
 
-      if (platform.includes("win") || userAgent.includes("windows")) {
+      setDetectedPlatform(platforms.android);
+      return;
+
+      if (/iphone|ipad|ipod/.test(userAgent)) {
+        setDetectedPlatform(platforms.iphone);
+      } else if (userAgent.includes("android")) {
+        setDetectedPlatform(platforms.android);
+      } else if (platform.includes("win") || userAgent.includes("windows")) {
         setDetectedPlatform(platforms.windows);
       } else if (platform.includes("mac") || userAgent.includes("mac")) {
         setDetectedPlatform(platforms.mac);
@@ -202,7 +254,8 @@ export default function Download() {
       {detectedPlatform && (
         <DetectedPlatformSection platform={detectedPlatform} />
       )}
-      <AllPlatformsSection />
+      <MobilePlatformsSection />
+      <DesktopPlatformsSection />
     </Layout>
   );
 }
