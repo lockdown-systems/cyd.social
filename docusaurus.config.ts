@@ -24,6 +24,37 @@ const config: Config = {
 
   onBrokenLinks: "throw",
 
+  headTags: [
+    {
+      tagName: "meta",
+      attributes: {
+        name: "fediverse:creator",
+        content: "@lockdownsystems@infosec.exchange",
+      },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        href: "https://infosec.exchange/@lockdownsystems",
+        rel: "me",
+      },
+    },
+    {
+      tagName: "meta",
+      attributes: {
+        name: "fediverse:creator",
+        content: "@cyd@infosec.exchange",
+      },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        href: "https://infosec.exchange/@cyd",
+        rel: "me",
+      },
+    },
+  ],
+
   markdown: {
     hooks: {
       onBrokenMarkdownLinks: "warn",
@@ -102,7 +133,7 @@ const config: Config = {
           {
             from: "/docs/intro/",
             to: "/docs/",
-          }
+          },
         ],
       },
     ],
@@ -137,7 +168,7 @@ const config: Config = {
         {
           label: "Login",
           to: "https://dash.cyd.social/",
-          position: "left"
+          position: "left",
         },
         {
           type: "html",
