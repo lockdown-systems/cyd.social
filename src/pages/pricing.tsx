@@ -39,7 +39,10 @@ const pricingPlans: PricingPlan[] = [
         text: "Backup posts, reposts, likes, bookmarks, and chats",
         included: true,
       },
-      { text: "Delete posts, except for what you want to keep", included: false },
+      {
+        text: "Delete posts, except for what you want to keep",
+        included: false,
+      },
       { text: "Delete reposts", included: false },
       { text: "Delete likes", included: false },
       { text: "Delete chats", included: false },
@@ -64,15 +67,19 @@ const pricingPlans: PricingPlan[] = [
   {
     name: "Premium",
     description:
-      "With a premium plan, for 1 year, you can selectively delete other data too.",
-    price: "$36",
+      "With a premium plan, you can selectively delete other data too.",
+    price: "$36 USD",
+    priceNote: "per year",
     buttonText: "Get Premium",
     buttonUrl: "https://dash.cyd.social/#/dashboard/buy",
     buttonStyle: "premium",
     blueskyFeaturesHeader: "Bluesky Features",
     blueskyFeatures: [
       { text: "Everything in the free plan", included: true },
-      { text: "Delete posts, except for what you want to keep", included: true },
+      {
+        text: "Delete posts, except for what you want to keep",
+        included: true,
+      },
       { text: "Delete reposts", included: true },
       { text: "Delete likes", included: true },
       { text: "Delete chats", included: true },
@@ -97,7 +104,7 @@ const pricingPlans: PricingPlan[] = [
     name: "Cyd for Teams",
     description:
       "Give your employees privacy, peace of mind, and protection from doxing and harassment.",
-    price: "$36",
+    price: "$36 USD",
     priceNote: "/user/year (plus taxes)",
     buttonText: "Get Cyd for Teams",
     buttonUrl: "https://dash.cyd.social/#/teams/new",
