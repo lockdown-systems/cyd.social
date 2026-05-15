@@ -69,8 +69,6 @@
 .downloadScreenshot {
   max-width: 100%;
   height: auto;
-  border-radius: 12px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -78,6 +76,15 @@
   transform: translateY(-5px);
 }
 
+.mobileScreenshot {
+  max-height: 800px;
+  width: auto;
+  max-width: 100%;
+}
+.platformNote {
+  margin-top: 1.5rem;
+  color: #666666;
+}
 /* All platforms section */
 .allPlatformsSection {
   padding: 4rem 0;
@@ -94,16 +101,25 @@
   font-size: 2.5rem;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 3rem;
   color: #1c1e21;
 }
 
+.sectionSubtitle {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
 .platformGrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.platformCard {
+  flex: 0 1 280px;
 }
 
 .platformCard {
@@ -188,7 +204,6 @@
   }
 
   .platformGrid {
-    grid-template-columns: repeat(2, 1fr);
     max-width: 600px;
   }
 
@@ -212,9 +227,12 @@
   }
 
   .platformGrid {
-    grid-template-columns: 1fr;
     gap: 1.5rem;
     max-width: 400px;
+  }
+
+  .platformCard {
+    flex: 1 1 100%;
   }
 
   .platformCard {

@@ -17,7 +17,7 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Save a searchable copy of your data from tech platforms locally on your
-        computer.
+        computer or phone.
       </>
     ),
   },
@@ -25,7 +25,7 @@ const FeatureList: FeatureItem[] = [
     title: "Delete Your Data",
     image: "/img/feature-delete.png",
     description: (
-      <>Delete your tweets, likes, direct messages, and other data from X.</>
+      <>Delete tweets, likes, direct messages, and other data from X. Delete posts, likes, chats, and other data from Bluesky.</>
     ),
   },
   {
@@ -33,8 +33,7 @@ const FeatureList: FeatureItem[] = [
     image: "/img/feature-migrate.png",
     description: (
       <>
-        Migrate your tweets from closed platforms like X into open platforms
-        like Bluesky.
+        Migrate your tweets from X to Bluesky, and say good riddance Elon Musk.
       </>
     ),
   },
@@ -43,7 +42,7 @@ const FeatureList: FeatureItem[] = [
     image: "/img/feature-private.png",
     description: (
       <>
-        Cyd runs directly on your computer, not on our servers. We don't have
+        Cyd runs directly on your computer or phone, not on our servers. We don't have
         access to any of your accounts, or to any of the data in them.
       </>
     ),
@@ -54,7 +53,7 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Cyd doesn't rely on third-party APIs from hostile tech platforms like X
-        and Facebook.
+        and Facebook. It does use friendly APIs though, like Bluesky's.
       </>
     ),
   },

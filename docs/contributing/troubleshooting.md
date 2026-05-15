@@ -12,7 +12,7 @@ Open Cyd. Click the **View** menu, and choose **Toggle Developer Tools**.
 
 ![Toggle Developer Tools menu button](./img/toggle-devtools.png)
 
-:::info Finding the View menu
+:::info[Finding the View menu]
 If you're using a Mac, the **View** menu button will be at the very top of your screen. If you're using Windows or Linux, the **View** menu button will be at the top of the Cyd window.
 :::
 

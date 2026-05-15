@@ -34,7 +34,7 @@ Admin users have the ability to add and delete seats, add and delete other admin
 
 Just like with seats, you can invite users to become admins using their email addresses. Admins can also delete admin access from other admins. Admins cannot remove admin privileges from organization owner.
 
-:::tip Admins don't take up seats
+:::tip[Admins don't take up seats]
 
 Admin users don't necessarily need to use up one of the seats you're paying for too &dash; for example, if you work for a Managed Service Provider and provide IT support for your clients, you can have an admin user without your client having to pay for it.
 
@@ -48,13 +48,13 @@ Under **Domains**, just add your domain name and click the **Add Domain** button
 
 For example, if your organization's domain name is `example.com` and you add this domain, if `alice@example.com` email address signs into Cyd, she will automatically join your team and take up one seat.
 
-:::tip Onboarding and offboarding is easy
+:::tip[Onboarding and offboarding is easy]
 
 If you add your domain to Cyd, all you have to do to onboard your employees is let them know they have free access to Cyd. When an employee leaves, you need to login to the Cyd for Teams dashboard and delete their seat. That's it.
 
 :::
 
-:::warning What happens when you run out of seats
+:::warning[What happens when you run out of seats]
 
 If someone signs up to Cyd using an email address with your organization's domain, but you don't have any seats available, the person won't get added to your team automatically.
 

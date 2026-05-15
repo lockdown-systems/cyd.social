@@ -16,8 +16,12 @@ interface PricingPlan {
   buttonText: string;
   buttonUrl: string;
   buttonStyle: "free" | "premium";
-  featuresHeader: string;
-  features: FeatureItem[];
+  featuresHeader?: string;
+  features?: FeatureItem[];
+  xFeaturesHeader?: string;
+  xFeatures?: FeatureItem[];
+  blueskyFeaturesHeader?: string;
+  blueskyFeatures?: FeatureItem[];
 }
 
 const pricingPlans: PricingPlan[] = [
@@ -28,48 +32,79 @@ const pricingPlans: PricingPlan[] = [
     buttonText: "Get Cyd Now",
     buttonUrl: "/download/",
     buttonStyle: "free",
-    featuresHeader: "Features for X platform",
-    features: [
-      { text: "Unlimited X accounts", included: true },
+    blueskyFeaturesHeader: "Bluesky Features",
+    blueskyFeatures: [
+      { text: "Unlimited Bluesky accounts", included: true },
       {
-        text: "Save a backup of your tweets, retweets, likes, bookmarks, and direct messages",
+        text: "Backup posts, reposts, likes, bookmarks, and chats",
         included: true,
       },
-      { text: "Delete all your tweets", included: true },
+      {
+        text: "Delete posts, except for what you want to keep",
+        included: false,
+      },
+      { text: "Delete reposts", included: false },
+      { text: "Delete likes", included: false },
+      { text: "Delete chats", included: false },
+      { text: "Delete bookmarks", included: false },
       { text: "Unfollow everyone", included: false },
-      { text: "Delete your likes", included: false },
-      { text: "Delete your bookmarks", included: false },
-      { text: "Delete your direct messages", included: false },
-      { text: "Migrate your tweets to Bluesky", included: false },
+    ],
+    xFeaturesHeader: "X Features",
+    xFeatures: [
+      { text: "Unlimited X accounts", included: true },
+      {
+        text: "Backup tweets, retweets, likes, bookmarks, and direct messages",
+        included: true,
+      },
+      { text: "Delete all tweets", included: true },
+      { text: "Unfollow everyone", included: false },
+      { text: "Delete likes", included: false },
+      { text: "Delete bookmarks", included: false },
+      { text: "Delete direct messages", included: false },
+      { text: "Migrate tweets to Bluesky", included: false },
     ],
   },
   {
     name: "Premium",
     description:
-      "With a premium plan, for 1 year, you can selectively delete other data too.",
-    price: "$36",
+      "With a premium plan, you can selectively delete other data too.",
+    price: "$36 USD",
+    priceNote: "per year",
     buttonText: "Get Premium",
     buttonUrl: "https://dash.cyd.social/#/dashboard/buy",
     buttonStyle: "premium",
-    featuresHeader: "Features for X platform",
-    features: [
+    blueskyFeaturesHeader: "Bluesky Features",
+    blueskyFeatures: [
       { text: "Everything in the free plan", included: true },
       {
-        text: "Delete your tweets, except the ones you want to keep!",
+        text: "Delete posts, except for what you want to keep",
+        included: true,
+      },
+      { text: "Delete reposts", included: true },
+      { text: "Delete likes", included: true },
+      { text: "Delete chats", included: true },
+      { text: "Delete bookmarks", included: true },
+      { text: "Unfollow everyone", included: true },
+    ],
+    xFeaturesHeader: "X Features",
+    xFeatures: [
+      { text: "Everything in the free plan", included: true },
+      {
+        text: "Delete tweets, except the ones you want to keep",
         included: true,
       },
       { text: "Unfollow everyone", included: true },
-      { text: "Delete your likes", included: true },
-      { text: "Delete your bookmarks", included: true },
-      { text: "Delete your direct messages", included: true },
-      { text: "Migrate your tweets to Bluesky", included: true },
+      { text: "Delete likes", included: true },
+      { text: "Delete bookmarks", included: true },
+      { text: "Delete direct messages", included: true },
+      { text: "Migrate tweets to Bluesky", included: true },
     ],
   },
   {
     name: "Cyd for Teams",
     description:
       "Give your employees privacy, peace of mind, and protection from doxing and harassment.",
-    price: "$36",
+    price: "$36 USD",
     priceNote: "/user/year (plus taxes)",
     buttonText: "Get Cyd for Teams",
     buttonUrl: "https://dash.cyd.social/#/teams/new",
@@ -118,24 +153,71 @@ function PricingCard({ plan }: { plan: PricingPlan }) {
         </a>
       </div>
 
-      <p className={styles.featuresHeader}>{plan.featuresHeader}</p>
+      {plan.blueskyFeatures && (
+        <>
+          <p className={styles.featuresHeader}>{plan.blueskyFeaturesHeader}</p>
+          <ul className={styles.features}>
+            {plan.blueskyFeatures.map((feature, index) => (
+              <li key={index} className={styles.featureItem}>
+                <img
+                  src={
+                    feature.included
+                      ? useBaseUrl("/img/circle-check-solid.svg")
+                      : useBaseUrl("/img/circle-xmark-regular.svg")
+                  }
+                  alt={feature.included ? "Included" : "Not included"}
+                  className={styles.featureIcon}
+                />
+                <div className={styles.featureText}>{feature.text}</div>
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
 
-      <ul className={styles.features}>
-        {plan.features.map((feature, index) => (
-          <li key={index} className={styles.featureItem}>
-            <img
-              src={
-                feature.included
-                  ? useBaseUrl("/img/circle-check-solid.svg")
-                  : useBaseUrl("/img/circle-xmark-regular.svg")
-              }
-              alt={feature.included ? "Included" : "Not included"}
-              className={styles.featureIcon}
-            />
-            <div className={styles.featureText}>{feature.text}</div>
-          </li>
-        ))}
-      </ul>
+      {plan.xFeatures && (
+        <>
+          <p className={styles.featuresHeader}>{plan.xFeaturesHeader}</p>
+          <ul className={styles.features}>
+            {plan.xFeatures.map((feature, index) => (
+              <li key={index} className={styles.featureItem}>
+                <img
+                  src={
+                    feature.included
+                      ? useBaseUrl("/img/circle-check-solid.svg")
+                      : useBaseUrl("/img/circle-xmark-regular.svg")
+                  }
+                  alt={feature.included ? "Included" : "Not included"}
+                  className={styles.featureIcon}
+                />
+                <div className={styles.featureText}>{feature.text}</div>
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
+
+      {plan.features && (
+        <>
+          <p className={styles.featuresHeader}>{plan.featuresHeader}</p>
+          <ul className={styles.features}>
+            {plan.features.map((feature, index) => (
+              <li key={index} className={styles.featureItem}>
+                <img
+                  src={
+                    feature.included
+                      ? useBaseUrl("/img/circle-check-solid.svg")
+                      : useBaseUrl("/img/circle-xmark-regular.svg")
+                  }
+                  alt={feature.included ? "Included" : "Not included"}
+                  className={styles.featureIcon}
+                />
+                <div className={styles.featureText}>{feature.text}</div>
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
     </div>
   );
 }

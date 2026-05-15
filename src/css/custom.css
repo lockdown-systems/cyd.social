@@ -235,6 +235,11 @@
   text-decoration: none;
 }
 
+/* Docs: don't underline button links */
+.theme-doc-markdown a.button {
+  text-decoration: none;
+}
+
 /* Docs: allow videos to be responsive */
 video {
   max-width: 100%;
