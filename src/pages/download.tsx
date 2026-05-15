@@ -51,9 +51,18 @@ function DetectedPlatformSection({ platform }: { platform: PlatformInfo }) {
           <div>
             <p className={styles.platformNote}>
               {platform.isMobile ? (
-                <>Cyd for {platform.displayName} supports <strong>Bluesky</strong>. Looking to delete your data on X? Use <a href="#desktop-platforms">Cyd for Desktop</a> instead.</>
+                <>
+                  Cyd for {platform.displayName} supports{" "}
+                  <strong>Bluesky</strong>. Looking to delete your data on X?
+                  Use <a href="#desktop-platforms">Cyd for Desktop</a> instead.
+                </>
               ) : (
-                <>Cyd for {platform.displayName} supports <strong>X (formerly Twitter)</strong>. Looking to delete data on Bluesky? Use <a href="#mobile-platforms">Cyd for Mobile</a> instead.</>
+                <>
+                  Cyd for {platform.displayName} supports{" "}
+                  <strong>X (formerly Twitter)</strong>. Looking to delete data
+                  on Bluesky? Use <a href="#mobile-platforms">Cyd for Mobile</a>{" "}
+                  instead.
+                </>
               )}
             </p>
           </div>
@@ -82,7 +91,9 @@ function MobilePlatformsSection() {
     <section className={styles.allPlatformsSection} id="mobile-platforms">
       <div className={styles.container}>
         <h2 className={styles.sectionTitle}>Cyd for Mobile</h2>
-        <p className={styles.sectionSubtitle}>Gain control of your Bluesky data</p>
+        <p className={styles.sectionSubtitle}>
+          Gain control of your Bluesky data
+        </p>
         <div className={styles.platformGrid}>
           {mobilePlatforms.map((key) => {
             const platform = platforms[key];
@@ -120,7 +131,9 @@ function DesktopPlatformsSection() {
     <section className={styles.allPlatformsSection} id="desktop-platforms">
       <div className={styles.container}>
         <h2 className={styles.sectionTitle}>Cyd for Desktop</h2>
-        <p className={styles.sectionSubtitle}>Gain control of your X (formerly Twitter) data</p>
+        <p className={styles.sectionSubtitle}>
+          Gain control of your X (formerly Twitter) data
+        </p>
         <div className={styles.platformGrid}>
           {desktopPlatforms.map((key) => {
             const platform = platforms[key];
@@ -161,8 +174,8 @@ function getPlatforms(): Record<string, PlatformInfo> {
       isMobile: true,
       downloads: [
         {
-          label: "iOS App Store",
-          url: "#",
+          label: "iOS App Store (coming soon)",
+          url: "/docs/mobile/download#cyd-for-ios-is-under-review-by-apple",
         },
       ],
     },
@@ -230,7 +243,7 @@ function getPlatforms(): Record<string, PlatformInfo> {
 
 export default function Download() {
   const [detectedPlatform, setDetectedPlatform] = useState<PlatformInfo | null>(
-    null
+    null,
   );
 
   useEffect(() => {
