@@ -188,7 +188,7 @@ function getPlatforms(): Record<string, PlatformInfo> {
       downloads: [
         {
           label: "Android Play Store",
-          url: "#",
+          url: "https://play.google.com/store/apps/details?id=systems.lockdown.cydmobile",
         },
         {
           label: "APK from GitHub",
