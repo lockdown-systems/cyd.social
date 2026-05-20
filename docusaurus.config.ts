@@ -26,13 +26,6 @@ const config: Config = {
 
   headTags: [
     {
-      tagName: "meta",
-      attributes: {
-        name: "fediverse:creator",
-        content: "@lockdownsystems@infosec.exchange",
-      },
-    },
-    {
       tagName: "link",
       attributes: {
         href: "https://infosec.exchange/@lockdownsystems",
