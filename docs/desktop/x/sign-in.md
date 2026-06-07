@@ -4,13 +4,19 @@ sidebar_position: 1
 
 # Sign In to X
 
-When you're on the new account screen in Cyd, choose the X platform. You'll see the following screen:
+When you're on the new account screen in Cyd, choose the X platform. You'll be asked if you still have access to your X account:
 
-![Sign in to X](./img/sign-in.png)
+![Archive Only modal](./img/sign-in-archive-only-modal.png)
+
+If you still have access to your X account, choose **I Can Login to X**. All features of Cyd will work.
 
 :::tip[Already deleted your X account?]
-If you've already deleted your account but you have an archive of your data, click **Import Archive Only**. This will bring you to [Archive Only Mode](./archive-only).
+However, if you don't have access to your X account anymore (maybe you already deleted it, or you've been permenantly suspended), but you have an archive of your data, you can still use Cyd in [Archive Only Mode](./archive-only). In this case, **I Can't Login, Use Archive Only Mode**.
 :::
+
+After clicking **I Can Login to X**, you will see the X sign in page, like this:
+
+![Sign in to X](./img/sign-in.png)
 
 Cyd (the bird) is at the top of the window giving you instructions, and the bottom part of the window is Cyd's embedded web browser.
 

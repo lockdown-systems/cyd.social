@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Archive Only Mode
 
-Archive Only Mode is a limited version of Cyd that lets you use the features that are possible without having access to sign into an X account. If you can still sign into your account, [continue to Dashboard](./dashboard.md) instead.
+Archive Only Mode is a limited version of Cyd that lets you use the features that are possible without having access to sign into an X account.
 
 ![Archive Only Mode](./img/archive-only-mode.png)
 
