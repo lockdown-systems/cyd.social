@@ -11,11 +11,12 @@ interface FeatureItem {
 interface PricingPlan {
   name: string;
   description: string;
-  price?: string;
-  priceNote?: string;
   buttonText: string;
   buttonUrl: string;
   buttonStyle: "free" | "premium";
+  monthlyPriceCents?: number;
+  annualPriceCents?: number;
+  billingRateSuffix?: string;
   featuresHeader?: string;
   features?: FeatureItem[];
   xFeaturesHeader?: string;
@@ -23,6 +24,10 @@ interface PricingPlan {
   blueskyFeaturesHeader?: string;
   blueskyFeatures?: FeatureItem[];
 }
+
+type BillingPeriod = "monthly" | "annual";
+
+const formatDollars = (cents: number) => (cents / 100).toFixed(0);
 
 const pricingPlans: PricingPlan[] = [
   {
@@ -67,12 +72,13 @@ const pricingPlans: PricingPlan[] = [
   {
     name: "Premium",
     description:
-      "With a premium plan, you can selectively delete other data too.",
-    price: "$36 USD",
-    priceNote: "per year",
+      "With Premium, you can selectively delete other data too.",
     buttonText: "Get Premium",
     buttonUrl: "https://dash.cyd.social/#/dashboard/buy",
     buttonStyle: "premium",
+    monthlyPriceCents: 400,
+    annualPriceCents: 3600,
+    billingRateSuffix: " / month",
     blueskyFeaturesHeader: "Bluesky Features",
     blueskyFeatures: [
       { text: "Everything in the free plan", included: true },
@@ -104,11 +110,12 @@ const pricingPlans: PricingPlan[] = [
     name: "Cyd for Teams",
     description:
       "Give your employees privacy, peace of mind, and protection from doxing and harassment.",
-    price: "$36 USD",
-    priceNote: "/user/year (plus taxes)",
     buttonText: "Get Cyd for Teams",
     buttonUrl: "https://dash.cyd.social/#/teams/new",
     buttonStyle: "premium",
+    monthlyPriceCents: 400,
+    annualPriceCents: 3600,
+    billingRateSuffix: " / user / month",
     featuresHeader: "Features",
     features: [
       {
@@ -126,17 +133,69 @@ const pricingPlans: PricingPlan[] = [
   },
 ];
 
+function intervalLabel(billingPeriod: BillingPeriod): string {
+  return billingPeriod === "monthly" ? "1 Month" : "12 Months";
+}
+
+function intervalRateLabel(plan: PricingPlan, billingPeriod: BillingPeriod): string {
+  const monthlyEquivalentCents =
+    billingPeriod === "monthly"
+      ? plan.monthlyPriceCents || 0
+      : Math.round((plan.annualPriceCents || 0) / 12);
+
+  return `$${formatDollars(monthlyEquivalentCents)}${plan.billingRateSuffix || " / month"}`;
+}
+
+function annualBillingNote(plan: PricingPlan): string {
+  const perUser = (plan.billingRateSuffix || "").includes("user") ? " / user" : "";
+  return `You pay $${formatDollars(plan.annualPriceCents || 0)}${perUser} / year`;
+}
+
 function PricingCard({ plan }: { plan: PricingPlan }) {
+  const [billingPeriod, setBillingPeriod] = React.useState<BillingPeriod>("annual");
+
   return (
     <div className={styles.pricingColumn}>
       <div className={styles.pricingHeader}>
         <h2>{plan.name}</h2>
         <p className={styles.description}>{plan.description}</p>
-        {plan.price && (
-          <p className={styles.price}>
-            <strong>{plan.price}</strong>
-            <span className={styles.priceNote}>{plan.priceNote}</span>
-          </p>
+        {plan.buttonStyle === "premium" && (
+          <div className={styles.billingToggleBlock}>
+            <div className={styles.billingToggle} role="group" aria-label={`${plan.name} billing period`}>
+              <button
+                type="button"
+                className={
+                  billingPeriod === "monthly"
+                    ? styles.billingToggleActive
+                    : styles.billingToggleInactive
+                }
+                onClick={() => setBillingPeriod("monthly")}
+              >
+                1 Month
+              </button>
+              <button
+                type="button"
+                className={
+                  billingPeriod === "annual"
+                    ? styles.billingToggleActive
+                    : styles.billingToggleInactive
+                }
+                onClick={() => setBillingPeriod("annual")}
+              >
+                12 Months
+              </button>
+            </div>
+            <div className={styles.billingPrice}>
+              <span className={styles.billingRate}>
+                {intervalRateLabel(plan, billingPeriod)}
+              </span>
+              {billingPeriod === "annual" && (
+                <span className={styles.billingAnnualNote}>
+                  {annualBillingNote(plan)}
+                </span>
+              )}
+            </div>
+          </div>
         )}
       </div>
 

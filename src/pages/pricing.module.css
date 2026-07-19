@@ -72,21 +72,62 @@
   margin-bottom: 20px;
 }
 
-.price {
-  margin-bottom: 30px;
+.billingToggleBlock {
+  text-align: center;
+  margin: 24px 0 30px;
 }
 
-.price strong {
-  font-size: 1.75rem;
+.billingToggle {
+  display: inline-flex;
+  gap: 0;
+  border-radius: 999px;
+  padding: 3px;
+  background: #eef2f5;
+}
+
+.billingToggleActive,
+.billingToggleInactive {
+  border: 0;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.6rem 1rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.billingToggleActive {
+  background: #2e3440;
+  color: #ffffff;
+}
+
+.billingToggleInactive {
+  background: transparent;
+  color: #5e6b73;
+}
+
+.billingPrice {
+  margin-top: 16px;
+}
+
+.billingRate {
+  display: block;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #2e3440;
 }
 
-.priceNote {
-  font-size: 0.875rem;
+.billingNote {
+  margin-top: 4px;
+  font-size: 0.95rem;
   color: #5e6b73;
-  display: inline;
-  margin-left: 5px;
+}
+
+.billingAnnualNote {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: #5e6b73;
 }
 
 .buttonContainer {
@@ -167,6 +208,16 @@
 @media (max-width: 480px) {
   .articleTitle {
     font-size: 1.75rem;
+  }
+
+  .billingToggle {
+    width: 100%;
+    justify-content: stretch;
+  }
+
+  .billingToggleActive,
+  .billingToggleInactive {
+    flex: 1;
   }
 
   .pricingColumn {
