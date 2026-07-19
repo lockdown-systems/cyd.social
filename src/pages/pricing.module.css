@@ -123,6 +123,13 @@
   color: #5e6b73;
 }
 
+.billingAnnualNote {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: #5e6b73;
+}
+
 .buttonContainer {
   margin-bottom: 30px;
 }

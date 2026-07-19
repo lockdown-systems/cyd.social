@@ -146,6 +146,11 @@ function intervalRateLabel(plan: PricingPlan, billingPeriod: BillingPeriod): str
   return `$${formatDollars(monthlyEquivalentCents)}${plan.billingRateSuffix || " / month"}`;
 }
 
+function annualBillingNote(plan: PricingPlan): string {
+  const perUser = (plan.billingRateSuffix || "").includes("user") ? " / user" : "";
+  return `You pay $${formatDollars(plan.annualPriceCents || 0)}${perUser} / year`;
+}
+
 function PricingCard({ plan }: { plan: PricingPlan }) {
   const [billingPeriod, setBillingPeriod] = React.useState<BillingPeriod>("annual");
 
@@ -184,6 +189,11 @@ function PricingCard({ plan }: { plan: PricingPlan }) {
               <span className={styles.billingRate}>
                 {intervalRateLabel(plan, billingPeriod)}
               </span>
+              {billingPeriod === "annual" && (
+                <span className={styles.billingAnnualNote}>
+                  {annualBillingNote(plan)}
+                </span>
+              )}
             </div>
           </div>
         )}
