@@ -27,7 +27,7 @@ interface PricingPlan {
 
 type BillingPeriod = "monthly" | "annual";
 
-const formatDollars = (cents: number) => (cents / 100).toFixed(0);
+const formatUsd = (cents: number) => `$${(cents / 100).toFixed(0)} USD`;
 
 const pricingPlans: PricingPlan[] = [
   {
@@ -143,12 +143,12 @@ function intervalRateLabel(plan: PricingPlan, billingPeriod: BillingPeriod): str
       ? plan.monthlyPriceCents || 0
       : Math.round((plan.annualPriceCents || 0) / 12);
 
-  return `$${formatDollars(monthlyEquivalentCents)}${plan.billingRateSuffix || " / month"}`;
+  return `${formatUsd(monthlyEquivalentCents)}${plan.billingRateSuffix || " / month"}`;
 }
 
 function annualBillingNote(plan: PricingPlan): string {
   const perUser = (plan.billingRateSuffix || "").includes("user") ? " / user" : "";
-  return `You pay $${formatDollars(plan.annualPriceCents || 0)}${perUser} / year`;
+  return `You pay ${formatUsd(plan.annualPriceCents || 0)}${perUser} / year`;
 }
 
 function PricingCard({ plan }: { plan: PricingPlan }) {
