@@ -1,11 +1,20 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Layout from '@theme/Layout';
 
+// The URL Cyd Dev registers with the operating system to receive a finished
+// Bluesky authorization. A private-use URI scheme has no naming authority, so
+// exactly one slash follows the colon (RFC 8252 section 7.1). This must match
+// what Cyd handles: see blueskyOAuthCallbackURL() in the cyd repo.
+const CYD_URL = 'social.cyd.dev-api:/atproto-oauth-callback/';
+
 export default function BlueskyRedirectToCydDev(): React.JSX.Element {
+  // The query string carries an authorization code, which is account-control
+  // material, so it is never logged. It is only ever handed straight to Cyd.
+  const [cydURL, setCydURL] = useState('');
+
   useEffect(() => {
-    const protocol = window.location.href.includes('redirect-to-cyd-dev') ? 'cyd-dev' : 'cyd';
-    const url = `${protocol}://bluesky-oauth/${window.location.search}`;
-    console.log('Redirecting to', url);
+    const url = `${CYD_URL}${window.location.search}`;
+    setCydURL(url);
     window.location.href = url;
   }, []);
 
@@ -19,9 +28,14 @@ export default function BlueskyRedirectToCydDev(): React.JSX.Element {
           <div className="col col--8 col--offset-2">
             <h1>Redirecting to Cyd Dev to finish Bluesky authentication...</h1>
             <noscript>
-              <p>Logging into your Bluesky account within Cyd requires JavaScript.</p>
+              <p>Logging into your Bluesky account within Cyd Dev requires JavaScript.</p>
             </noscript>
-            <p>If your browser asks you if you want to open Cyd, say yes.</p>
+            <p>If your browser asks you if you want to open Cyd Dev, say yes.</p>
+            {cydURL && (
+              <p>
+                If nothing happened, <a href={cydURL}>open Cyd Dev</a>.
+              </p>
+            )}
           </div>
         </div>
       </div>
