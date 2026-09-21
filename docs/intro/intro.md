@@ -8,7 +8,7 @@ slug: /
 Cyd is an open source app that makes it easy for you to **Clawback Your Data** from tech platforms.
 
 - [Cyd for Mobile](/docs/mobile/download) supports **Bluesky**.
-- [Cyd for Desktop](/docs/desktop/download) supports **X (formerly Twitter)**, with **Facebook** coming soon.
+- [Cyd for Desktop](/docs/desktop/download) supports **X (formerly Twitter)**, with **Facebook** and **Bluesky** coming soon.
 
 Cyd helps you create a local, private backup of your data &mdash; like all of your posts, likes, bookmarks, and direct messages. Once you've done this, Cyd helps you choose what data you want to delete from your online account. You can delete it all, or you can be selective, deleting most of it but keeping what went viral.
 

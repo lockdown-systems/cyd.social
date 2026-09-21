@@ -9,6 +9,7 @@ After signing in to your X account, you'll see that the main panel shows you a D
 - [Local Database](./local-database/intro.md)
 - [Delete from X](./delete)
 - [Migrate to Bluesky](./migrate-bluesky)
+- [Tombstone](./tombstone)
 
 The main panel has a right sidebar that includes an estimate of the number of tweets and likes in your X account. While these numbers are often close to your actual number of tweets and likes, they are often inaccurate.
 

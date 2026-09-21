@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# Save HTML Tweets, DMs, and/or Bookmarks
+# Save HTML Tweets and Bookmarks
 
 If you built your database from scratch, you can skip this section.
 
@@ -18,7 +18,6 @@ Here is a description of each option:
 
 - **Save an HTML version of each tweet:** Make an HTML archive version of each of your tweets. This takes a long time, so only check this box if you care about this.
 - **Save my bookmarks:** Scroll through your tweet timeline and save information about each bookmark.
-- **Save my direct messages:** Scroll through your direct message conversations and save information about each conversation. Then, for each conversation, scroll through the message history and save information about each message.
 
 ## Review
 
