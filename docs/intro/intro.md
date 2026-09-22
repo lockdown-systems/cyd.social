@@ -10,7 +10,7 @@ Cyd is an open source app that makes it easy for you to **Clawback Your Data** f
 - [Cyd for Mobile](/docs/mobile/download) supports **Bluesky**.
 - [Cyd for Desktop](/docs/desktop/download) supports **X (formerly Twitter)**, with **Facebook** and **Bluesky** coming soon.
 
-Cyd helps you create a local, private backup of your data &mdash; like all of your posts, likes, bookmarks, and direct messages. Once you've done this, Cyd helps you choose what data you want to delete from your online account. You can delete it all, or you can be selective, deleting most of it but keeping what went viral.
+Cyd helps you create a local, private backup of your data &mdash; like all of your posts, likes, and bookmarks. Once you've done this, Cyd helps you choose what data you want to delete from your online account. You can delete it all, or you can be selective, deleting most of it but keeping what went viral.
 
 ## Should I Use Mobile or Desktop?
 
@@ -18,7 +18,7 @@ If you want to automatically delete your old likes, reposts, chat messages, and 
 
 ![Screenshot of Cyd for Mobile](./img/cyd-mobile.png)
 
-If you want to back up and delete your data from **X**, such as tweets, likes, and direct messages, and optionally migrate them to Bluesky, then **start with [Cyd for Desktop](/docs/desktop/download).**
+If you want to back up and delete your data from **X**, such as tweets and likes, and optionally migrate them to Bluesky, then **start with [Cyd for Desktop](/docs/desktop/download).**
 
 ![Screenshot of Cyd for Desktop](./img/cyd-desktop.png)
 
@@ -45,8 +45,8 @@ If you're one of the millions of people fleeing the X platform, it's better to d
 
 | | Cyd for Mobile (Bluesky) | Cyd for Desktop (X) |
 |---|---|---|
-| **What you can delete** | Posts, reposts, likes, chat messages, bookmarks; unfollow everyone | Tweets, likes, bookmarks, direct messages; unfollow everyone |
-| **Extra features** | Delete your data on a schedule to keep your account ephemeral | Migrate your old tweets to Bluesky |
+| **What you can delete** | Posts, reposts, likes, chat messages, bookmarks; unfollow everyone | Tweets, likes, bookmarks; unfollow everyone |
+| **Extra features** | Delete your data on a schedule to keep your account ephemeral | Migrate your old tweets to Bluesky; update your profile with an X tombstone |
 
 ## We Can't Access Your Accounts or Your Data
 
