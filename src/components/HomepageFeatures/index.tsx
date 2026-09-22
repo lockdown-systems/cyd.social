@@ -25,7 +25,7 @@ const FeatureList: FeatureItem[] = [
     title: "Delete Your Data",
     image: "/img/feature-delete.png",
     description: (
-      <>Delete tweets, likes, direct messages, and other data from X. Delete posts, likes, chats, and other data from Bluesky.</>
+      <>Delete tweets, likes, and other data from X. Delete posts, likes, chats, and other data from Bluesky.</>
     ),
   },
   {

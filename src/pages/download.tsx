@@ -174,8 +174,8 @@ function getPlatforms(): Record<string, PlatformInfo> {
       isMobile: true,
       downloads: [
         {
-          label: "iOS App Store (coming soon)",
-          url: "/docs/mobile/download#cyd-for-ios-is-under-review-by-apple",
+          label: "iOS App Store",
+          url: "https://apps.apple.com/us/app/cyd-clawback-your-data/id6758054552",
         },
       ],
     },

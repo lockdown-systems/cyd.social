@@ -68,20 +68,6 @@ Delete all of the **bookmarks** in your account.
 
 Bookmarks are private in X.
 
-### Delete my direct messages
-
-Delete all of the **direct messages** in your account.
-
-This will only delete the direct messages from your account. The people you've sent messages to will still have copies of them unless they delete their direct messages too.
-
-:::tip
-
-Even though direct messages are private, and deleting them only deletes them for you, we still recommend that you delete them all.
-
-If you've been using X for years there's a good chance you have a lot of private messages in there. If your X account ever gets hacked, the hacker will have access to them all. The same is true if X ever decides to dig through your messages or share them with anyone.
-
-:::
-
 ## Free and Premium Features
 
 Some of the Delete Options require a Premium plan - [learn more about Premium plans here](../../premium/intro). And some of the options are free. If you're only using free options, there's no reason to create a Cyd account or sign up for a Premium plan.
@@ -105,6 +91,10 @@ You need a Premium plan to:
 When you click **Continue to Review**, you have a chance to review your options before proceeding:
 
 ![Review delete options](./img/delete-review.png)
+
+:::warning[ X might suspend your account for deleting a lot of data]
+Cyd deletes your data slowly, from inside a real browser window, and respects X's rate limits. Even so, X sometimes treats deleting a lot of data as suspicious activity. This can happen whether or not you use Cyd, and suspensions are outside of our control.
+:::
 
 When you're ready, click **Start Deleting**.
 

@@ -31,6 +31,6 @@ If you found a security bug, email security@lockdown.systems instead of reportin
 
 ## Writing code
 
-If you'd like to contribute code to Cyd, check out [Developing Cyd](https://github.com/lockdown-systems/cyd/blob/main/DEVELOPMENT.md) for instructions on setting up a local development environment.
+If you'd like to contribute code to Cyd, check out [Developing Cyd](https://github.com/lockdown-systems/cyd/blob/main/CONTRIBUTING.md) for instructions on setting up a local development environment.
 
 When you're ready to contribute code, open a pull request in the GitHub repository and one of the project maintainers will review it and possibly ask questions, request changes, reject it, or merge it into the project.
