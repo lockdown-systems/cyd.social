@@ -5,7 +5,7 @@ description: Cyd privacy policy
 
 # Privacy Policy
 
-_Last updated: November 18, 2024_
+_Last updated: October 8, 2026_
 
 This Privacy Policy (“Policy”) explains the information collection, use, and sharing practices of Lockdown Systems LLC (“Lockdown Systems”, “we,” “us,” and “our”).
 
@@ -41,7 +41,7 @@ Each time you use Cyd to save or delete your data, we collect the total count of
 
 _Cookies and Other Tracking Technologies_
 
-We also collect data about your use of the Services using the privacy-focused analytics service [Plausible](https://plausible.io/data-policy), as well as website and email analytics provided by [Ghost](https://ghost.org/privacy/). Our Services may include cookies (a small text file that is placed on your computer when you visit a website), tracking pixels (tiny electronic tags with a unique identifier embedded in websites, online ads and/or email), or tracking links (links that can detect clicks before forwarding you to the intended website).
+We also collect data about your use of the Services using website and email analytics provided by [Ghost](https://ghost.org/privacy/). Our Services may include cookies (a small text file that is placed on your computer when you visit a website), tracking pixels (tiny electronic tags with a unique identifier embedded in websites, online ads and/or email), or tracking links (links that can detect clicks before forwarding you to the intended website).
 
 Using these tracking technologies, we strive to only log data that is necessary to (a) understand how users access and find our Services; (b) store your preferences and settings; and (d) assist with security administrative functions.
 
@@ -74,7 +74,6 @@ We may disclose and/or share your information under the following circumstances:
   - [Ghost](https://ghost.org/privacy/) hosts the cyd.social website and maintains our newsletters, including the list of newsletter subscriber email addresses.
   - [Postmark](https://postmarkapp.com/privacy-policy) is the email delivery server we use for transactional emails, such as emailing verification codes. They will receive your email address while sending emails on our behalf.
   - [Stripe](https://stripe.com/privacy) is our payment processor. When you pay for premium services, Stripe retains information about you, your payment method, your billing address, and your billing history.
-  - [Plausible](https://plausible.io/privacy) is our analytics service. Plausible does not use cookies or collect personal data, but they do collect aggregate data about the usage of our Services.
 - Legal Compliance and Protection of Lockdown Systems and Others. We may disclose your information if required to do so by law or on a good faith belief that such disclosure is permitted by this Privacy Policy or reasonably necessary or appropriate for any of the following reasons: (a) to comply with legal process; (b) to enforce or apply our Terms of Use and this Privacy Policy, or other contracts with you, including investigation of potential violations thereof; (c) to respond to your requests for customer service; and/or (d) to protect the rights, property, or personal safety of Lockdown Systems, our agents and affiliates, our users, and the public. This includes exchanging information with other companies and organizations for fraud protection, and spam/malware prevention, and similar purposes.
 - Business Transfers. As we continue to develop our business, we may engage in certain business transactions, such as the transfer or sale of our assets. In such transactions, (including in contemplation of such transactions, e.g., due diligence) your information may be disclosed. If any of Lockdown Systems’ assets are sold or transferred to a third party, customer information (including your email address) would likely be one of the transferred business assets.
 - Consent. We may disclose your information to any third parties based on your consent to do so.
@@ -99,9 +98,7 @@ We may also process information for the same legitimate interests of our users a
 
 ## 6. Online Analytics
 
-We may use third-party web analytics services (such as [Plausible](https://plausible.io/)) on our Services to collect and analyze the information discussed above, and to engage in auditing, research, or reporting. The information collected by analytics technologies described in the “Cookies and Other Tracking Technologies” section above will be disclosed to or collected directly by these service providers, who use the information to evaluate your use of the Services, including by noting the third-party website from which you arrive to our Site, analyzing usage trends, assisting with fraud prevention, and providing certain features to you.
-
-Plausible does not use cookies or other persistent identifiers and only collects aggregate data, not personally identifiable data.
+We do not use third-party web analytics services on our Services. The only analytics we use are the website and email analytics provided by [Ghost](https://ghost.org/privacy/), the first-party platform that hosts our website and newsletter, as described in the “Cookies and Other Tracking Technologies” section above.
 
 ## 7. Your Choices and Data Subject Rights
 
