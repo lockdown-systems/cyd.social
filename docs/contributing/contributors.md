@@ -8,15 +8,15 @@ Thanks for your interest in contributing to Cyd! The source code and issue track
 
 ## Code of Conduct
 
-All members of the Cyd community must agree to comply with our [Contributor Covenant Code of Conduct](./code-of-conduct).
+All members of the Cyd community must agree to comply with our [Contributor Covenant Code of Conduct](./code-of-conduct.md).
 
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](./code-of-conduct)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](./code-of-conduct.md)
 
 ## Legal stuff
 
 - Lockdown Systems LLC owns the copyright for Cyd.
 - Cyd is released under the [GNU General Public License v3](https://github.com/lockdown-systems/cyd/blob/main/LICENSE) license.
-- By contributing code to the project, you have agreed to the version of our [Contributor License Agreement](./contributor-license-agreement) that was in the `main` branch of the `lockdown-systems/cyd` GitHub repository at the time of your contribution.
+- By contributing code to the project, you have agreed to the version of our [Contributor License Agreement](./contributor-license-agreement.md) that was in the `main` branch of the `lockdown-systems/cyd` GitHub repository at the time of your contribution.
 
 ## Bugs and feature requests
 

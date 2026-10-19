@@ -5,7 +5,7 @@ title: Schedule Deletion
 
 # Schedule Deletion
 
-After you've [saved your data](./save) and [deleted your data](./delete) for the first time, you can schedule data deletion. Scheduled deletion simply saves and deletes your data again, on a schedule, using your saved settings.
+After you've [saved your data](./save.md) and [deleted your data](./delete.md) for the first time, you can schedule data deletion. Scheduled deletion simply saves and deletes your data again, on a schedule, using your saved settings.
 
 ## Pick a Schedule
 
