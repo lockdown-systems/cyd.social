@@ -7,9 +7,9 @@ sidebar_position: 3
 After signing in to your X account, you'll see that the main panel shows you a Dashboard that allows you to naviate between the different features:
 
 - [Local Database](./local-database/intro.md)
-- [Delete from X](./delete)
-- [Migrate to Bluesky](./migrate-bluesky)
-- [Tombstone](./tombstone)
+- [Delete from X](./delete.md)
+- [Migrate to Bluesky](./migrate-bluesky.md)
+- [Tombstone](./tombstone.md)
 
 The main panel has a right sidebar that includes an estimate of the number of tweets and likes in your X account. While these numbers are often close to your actual number of tweets and likes, they are often inaccurate.
 

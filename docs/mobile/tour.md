@@ -36,11 +36,11 @@ You can click the **❮** button in the top-left to get back to the list of your
 
 Cyd helps you save data, delete data, schedule deletion, and browse the archive of your saved data. Some of the features are free, and some require a [premium account](../premium/intro.md):
 
-- [Save My Data](./save)
-- [Delete My Data](./delete) (Premium)
-- [Schedule Deletion](./schedule) (Premium)
-- [Browser Archive](./save)
+- [Save My Data](./save.md)
+- [Delete My Data](./delete.md) (Premium)
+- [Schedule Deletion](./schedule.md) (Premium)
+- [Browser Archive](./save.md)
 
 You can quickly switch between these features using the tabs at the bottom of the screen.
 
-To get started, [save your data](./save).
+To get started, [save your data](./save.md).

@@ -29,7 +29,7 @@ When you're ready, click **Start Archiving**.
 
 :::tip[Disable sleep]
 
-Depending on how much data you have in your X account and how often X rate limits you, archiving additional data could take a long time. Make sure to disable sleep on your computer. There are guides for how to do this in the [Disable Sleep](../../tips/disable-sleep/intro) section.
+Depending on how much data you have in your X account and how often X rate limits you, archiving additional data could take a long time. Make sure to disable sleep on your computer. There are guides for how to do this in the [Disable Sleep](../../tips/disable-sleep/intro.md) section.
 
 :::
 

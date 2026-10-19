@@ -10,7 +10,7 @@ When you build your database from scratch, Cyd learns your tweet history the sam
 
 Unfortunately, X will only show you about between 2,000 and 3,000 of your most recent tweets and likes in this way. Even if you delete all of those, X simply won't show you any of your tweet or like history on your profile page anymore, even if you have thousands of older tweets.
 
-If your account has a lot of data, you should [import data from an X archive](./import) instead.
+If your account has a lot of data, you should [import data from an X archive](./import.md) instead.
 
 :::
 
@@ -37,7 +37,7 @@ When you're ready, click **Build Database**.
 
 :::tip[Disable sleep]
 
-Depending on how much data you have in your X account and how often X rate limits you, building your database could take a long time. Make sure to disable sleep on your computer. There are guides for how to do this in the [Disable Sleep](../../tips/disable-sleep/intro) section.
+Depending on how much data you have in your X account and how often X rate limits you, building your database could take a long time. Make sure to disable sleep on your computer. There are guides for how to do this in the [Disable Sleep](../../tips/disable-sleep/intro.md) section.
 
 :::
 
@@ -69,6 +69,6 @@ When Cyd is done building your database, it shows you a summary of what it saved
 
 ![Finished saving data from X](./img/build-finished.png)
 
-In the right sidebar, you will also see the buttons **Browse Archive** and **Open Folder**. See [Browse Your Local Archive](../archive) for more information about these.
+In the right sidebar, you will also see the buttons **Browse Archive** and **Open Folder**. See [Browse Your Local Archive](../archive.md) for more information about these.
 
 There is also a summary of the amount of data in your local database. In the screenshot above, you can see the local database contains 317 saved tweets, 53 saved retweets, and 68 saved likes. So far, none of the tweets have been migrated to Bluesky.

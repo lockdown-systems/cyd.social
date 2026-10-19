@@ -22,4 +22,4 @@ When you sign into your Facebook account within Cyd's embedded browser, it's the
 
 Go ahead and sign in to your Facebook account using your username and password.
 
-After you sign in, Cyd will immediately start driving your browser to determine your username, your profile picture. When it's done, you'll end up at the Dashboard screen. Continue to [Dashboard](./dashboard).
+After you sign in, Cyd will immediately start driving your browser to determine your username, your profile picture. When it's done, you'll end up at the Dashboard screen. Continue to [Dashboard](./dashboard.md).
