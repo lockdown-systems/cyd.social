@@ -9,6 +9,7 @@ const config: Config = {
   title: "Cyd",
   tagline: "Tech platforms can't be trusted.",
   favicon: "img/icon.svg",
+  trailingSlash: true,
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {

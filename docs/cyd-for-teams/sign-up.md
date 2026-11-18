@@ -12,4 +12,4 @@ Once you've loaded the Cyd Dashboard, click the **Cyd for Teams** link in the na
 
 Give your organization a name, choose the number of seats you would like to purchase (you can always increase or decrease this later on), and click the **Buy Now** button.
 
-And that's it! You've created an organization and purchased Cyd for Teams seats. See [Teams Dashboard](./dashboard) to learn how to manage your Cyd for Teams account.
+And that's it! You've created an organization and purchased Cyd for Teams seats. See [Teams Dashboard](./dashboard.md) to learn how to manage your Cyd for Teams account.

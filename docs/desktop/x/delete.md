@@ -58,7 +58,7 @@ Delete all of the **likes** in your account.
 
 Likes are only visible to you on X (and, of course, to Elon Musk, X's employees, and anyone who can hack your X account). If you're primarily concerned about cleaning up OSINT crumbs about yourself, deleting your likes are optional.
 
-If you've been liking tweets for a very long time, there's a good chance that many of your old likes are [ghost likes](../x/tips/ghost-likes) and cannot be deleted.
+If you've been liking tweets for a very long time, there's a good chance that many of your old likes are [ghost likes](../x/tips/ghost-likes.md) and cannot be deleted.
 
 :::
 
@@ -70,7 +70,7 @@ Bookmarks are private in X.
 
 ## Free and Premium Features
 
-Some of the Delete Options require a Premium plan - [learn more about Premium plans here](../../premium/intro). And some of the options are free. If you're only using free options, there's no reason to create a Cyd account or sign up for a Premium plan.
+Some of the Delete Options require a Premium plan - [learn more about Premium plans here](../../premium/intro.md). And some of the options are free. If you're only using free options, there's no reason to create a Cyd account or sign up for a Premium plan.
 
 It's free to:
 

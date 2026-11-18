@@ -27,4 +27,4 @@ When Cyd is finished saving your data, it will show you a summary of what was sa
 
 ![Summary of what was saved](./img/save-finished.png)
 
-From this point, you can move on to [delete your data](./delete), or you can [browse the archive](./browse) that you just created.
+From this point, you can move on to [delete your data](./delete.md), or you can [browse the archive](./browse.md) that you just created.

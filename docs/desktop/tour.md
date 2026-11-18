@@ -13,7 +13,7 @@ When you open Cyd for the first time, you'll see a window like this:
 
 Most of the window shows the currently selected account. Since you haven't added any accounts yet, you're presented with the option to add a new account. At the moment, only the X platform is supported.
 
-Read more about [signing into your X account](x/sign-in).
+Read more about [signing into your X account](x/sign-in.md).
 
 ## Sidebar
 
@@ -30,7 +30,7 @@ When you click the menu icon, a menu like this will appear:
 
 From here, you can do the following:
 
-- **Sign into a Cyd account.** This is only necessary if you have a [Premium plan](../premium/intro). If you're already signed in, you can manage your Cyd account.
+- **Sign into a Cyd account.** This is only necessary if you have a [Premium plan](../premium/intro.md). If you're already signed in, you can manage your Cyd account.
 - **Check for Cyd updates.** Cyd will automatically check for updates in the background, but you can manually check here as well. We recommend that you always upgrade to the latest version of Cyd.
 - **Open advanced settings.** These are described below.
 - **View the about page.** This shows you the version of Cyd you're currently running.
@@ -57,5 +57,5 @@ Resetting Cyd won't touch your Data Folder, so you won't lose any data. You'll j
 
 Each platform that Cyd supports works in its own unique way. To learn how to use each platform, refer to the documentation for that platform:
 
-- [X (formerly Twitter)](x/sign-in)
-- [Facebook](facebook/sign-in) _(in beta)_
+- [X (formerly Twitter)](x/sign-in.md)
+- [Facebook](facebook/sign-in.md) _(in beta)_

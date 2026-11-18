@@ -5,11 +5,11 @@ title: Delete My Data
 
 # Delete My Data
 
-Deleting data is where Cyd really shines. Before you can delete data, make sure that you've [saved your data](./save) first.
+Deleting data is where Cyd really shines. Before you can delete data, make sure that you've [saved your data](./save.md) first.
 
 :::info[Deletion is a Premium Feature]
 
-You can save your Bluesky data and browse your archive for free, but deleting data requires a [premium account](../premium/intro).
+You can save your Bluesky data and browse your archive for free, but deleting data requires a [premium account](../premium/intro.md).
 
 You can create or sign into a Cyd account directly within the app using your email address. Once you've paid for a premium plan, all premium features are unlocked for as many Bluesky accounts as you'd like.
 
@@ -82,4 +82,4 @@ When Cyd is finished deleting your data, it will show you a summary of what was 
 
 ![Summary of what was deleted](./img/delete-finished.png)
 
-From this point, you can [browse the archive](./browse) of your data, including what you've deleted, or [schedule deletion](./schedule).
+From this point, you can [browse the archive](./browse.md) of your data, including what you've deleted, or [schedule deletion](./schedule.md).
